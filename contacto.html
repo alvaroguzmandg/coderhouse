@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Página de Contacto - RUNCLUB Club de Corredores</title>
+    <meta name="description" content="Somos un grupo de amigos apasionados por el Running. Organizamos carreras, compartimos noticias, contamos historias, sacamos muchas fotos y por sobre todo, transmitimos la pasión por este estilo de vida." />
+    <meta name="keywords" content="Club de corredores, RunClub, entrenamiento, noticias running, novedades running, correr, grupo de entrenamiento" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/newEstilos.css">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark contenidoSemiFull">
+            <div class="container-fluid">
+                <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo RunClub"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-run" aria-current="page" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-run" href="./nosotros.html">NOSOTROS</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="dropdown-toggle nav-run " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> RUNCLUB
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-run">
+                                <a class="nav-run-drop" href="./runclub.html">ZONA CORREDOR</a>
+                                <a class="nav-run-drop" href="./runclub.html#runclubAccesoNoticias">NOTICIAS</a>
+                                <a class="nav-run-drop" href="./runclub.html#runclubAccesoEditoriales">EDITORIALES</a>
+                                <a class="nav-run-drop" href="./runclub.html#runclubAccesoEntrenamientos">ENTRENAMIENTOS</a>
+                                <a class="nav-run-drop" href="./runclub.html#runclubAccesoBiografias">BIOGRAFÍA</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-run" href="./eventos.html">EVENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-run destacadoClub" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <!-- INICIO CONTENIDO INICIAL -->
+        <section class="portada">
+            <img src="./images/portadas/portada-contacto.png" alt="Imagen de portada contacto">
+            <h1>ENTRENÁ CON <span class="destacadoClub">NOSOTROS</span></h1>
+            <p class="textoEncabezado">Nunca es fácil probar algo nuevo. Pero es excelente. Porque no importa cuántas veces te caigas, siempre ganas algo. Probar cosas nuevas siempre es una victoria.
+            </p>
+
+
+        </section>
+        <!-- FIN CONTENIDO INICIAL -->
+
+
+
+        <section id="entrenaConNosotros" class="formularioContacto" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="500">
+            <div class="grillaRunClub">
+                <div class="accesoConNosotros">
+                    <img src="./images/contactoRunClub.jpg" alt="Sumate a RunClub">
+                </div>
+                <div class="accesoConNosotros datosContacto">
+                    <div class="tituloContacto">
+                        <h3>HACETE MIEMBRO <span class="destacadoClub">DE RUNCLUB</span></h3>
+
+                    </div>
+                    <!-- FORMULARIO DE REGISTRO -->
+                    <form action="" method="GET">
+                        <div>
+                            <input type="text" placeholder="Dirección de correo electrónico" name="email" id="mail">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Nombre" name="nombre" id="name">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Apellido" name="apellido" id="name">
+                        </div>
+
+
+                        <input class="botonEnviar verMas" type="submit" value="Enviar Registro">
+                        <input class="botonLimpiar" type="reset" value="Limpiar datos">
+                    </form>
+                    <!-- FIN FORMULARIO REGISTRO -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__informacion">
+                <h3>run<span class="destacadoClub">Club</span></h3>
+                <p class="footer__texto">Club de Corredores</p>
+                <p class="footer__texto">sumate@runclub.com</p>
+            </div>
+            <div class="footer__redes">
+                <p class="footer__texto">Seguinos en nuestras redes</p>
+                <div class="footer__accesos">
+                    <a href="#">
+                        <img class="footer__imagen" src="./images/ig.png" alt="Icono Instagram">
+                    </a>
+                    <a href="#">
+                        <img class="footer__imagen" src="./images/fb.png" alt="Icono Facebook">
+                    </a>
+                    <a href="#">
+                        <img class="footer__imagen" src="./images/tw.png" alt="Icono Twitter">
+                    </a>
+                    <a href="#">
+                        <img class="footer__imagen" src="./images/yt.png" alt="Icono Youtube">
+                    </a>
+                    <a href="#">
+                        <img class="footer__imagen" src="./images/what.png" alt="Icono Whatsapp">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

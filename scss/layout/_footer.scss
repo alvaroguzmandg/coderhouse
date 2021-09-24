@@ -1,0 +1,30 @@
+footer {
+    margin-top: 50px;
+    padding: 40px 0px;
+    background-color: #232323;
+    color: white;
+    .footer__contenido {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .footer__texto {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .footer__accesos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        margin-top: 5px;
+    }
+    .footer__imagen {
+        width: 70%;
+    }
+}

@@ -1,0 +1,32 @@
+@mixin accesosRunclub($colorletra, $colorFondo, $padding, $ancho, $case, $tamanioLetra, $margen) {
+    color: $colorletra;
+    background-color: $colorFondo;
+    padding: $padding;
+    width: $ancho;
+    text-transform: $case;
+    font-size: $tamanioLetra;
+    margin: $margen
+}
+
+a.btRun-sm {
+    @include accesosRunclub (white, var(--colorFondoPrincipal), 5px, auto, lowercase, 1rem, 10px auto)
+}
+
+a.btRun-med {
+    @include accesosRunclub (var(--destacadoClub), var(--colorFondoPrincipal), 10px 0px, 100px, uppercase, 1.5rem, 10px auto)
+}
+
+a.btRun-med:hover {
+    background-color: var(--destacadoClub);
+    color: #ffffff;
+}
+
+a.btRun-large {
+    @include accesosRunclub (black, white, 10px 20px, 200px, uppercase, 1.6rem, 10px auto);
+    text-align: center;
+}
+
+a.btRun-large:hover {
+    background-color: var(--destacadoClub);
+    color: white;
+}
