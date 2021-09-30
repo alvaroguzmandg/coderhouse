@@ -731,6 +731,48 @@ input {
     margin-bottom: 50px;
 }
 
+
+/* ESTILOS PÁGINA 404 */
+
+.portada__noEncontrado {
+    margin-top: 30px;
+}
+
+.portada__noEncontradoBloque {
+    grid-column-start: 3;
+    grid-column-end: span 4;
+}
+
+.portada__noEncontradoImagen {
+    width: 100%;
+}
+
+.portada__noEncontradoTexto {
+    grid-column-end: span 4;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portada__noEncontradoTexto .portada__noencontradoError {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.portada__noEncontradoTexto p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.portada__noEncontradoBoton {
+    width: auto!important;
+}
+
 @media only screen and (max-width:992px) {
     /* ESTILOS GENÉRICOS */
     html {
@@ -837,6 +879,22 @@ input {
     }
     section#entrenaConNosotros div.grillaRunClub {
         grid-template-columns: 1fr;
+    }
+    /* ESTILOS PÁGINA 404 */
+    @media only screen and (max-width:992px) {
+        .portada__noEncontradoBloque {
+            grid-column-start: 2;
+        }
+        .portada__noEncontradoTexto {
+            grid-column-end: span 6;
+        }
+        .portada__noEncontradoTexto p {
+            font-size: 1.2rem;
+        }
+        .portada__noEncontradoTexto .portada__noencontradoError {
+            width: 50px;
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -984,5 +1042,20 @@ input {
     }
     div.tituloContacto h3 {
         font-size: 2rem;
+    }
+    /* ESTILOS PÁGINAS 404 */
+    @media only screen and (max-width:600px) {
+        .portada__noEncontrado {
+            display: flex;
+            flex-direction: column;
+        }
+        .portada__noEncontradoBloque {
+            width: 50%;
+            margin: 0 auto;
+            margin-bottom: 0px;
+        }
+        img.portada__noEncontradoImagen {
+            margin-bottom: 0px!important;
+        }
     }
 }

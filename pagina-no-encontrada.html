@@ -66,32 +66,18 @@
         <!-- FIN CONTENIDO INICIAL -->
 
         <style>
-            .portada__noEncontrado {
-                margin-top: 30px;
-            }
-            
-            .portada__noEncontradoBloque {
-                grid-column-start: 3;
-                grid-column-end: span 3;
-            }
-            
-            .portada__noEncontradoImagen {
-                width: 100%;
-            }
-            
-            .portada__noEncontradoTexto {
-                grid-column-end: span 5;
-                padding-top: 50px;
-            }
+
         </style>
 
 
         <section class="portada portada__noencontrado container-fluid">
             <article class="grillaRunClub portada__noEncontrado">
-                <span class="portada__noEncontradoBloque"><img class="portada__noencontradoImagen" src="./images/pagina-no-encontrada.png" alt="RUNCLUB página no encontrada"></span>
+                <span class="portada__noEncontradoBloque"><img class="portada__noEncontradoImagen" src="./images/pagina-no-encontrada.png" alt="RUNCLUB página no encontrada"></span>
                 <span class="portada__noEncontradoTexto">
-                    <h2>¡El contenido que buscas no está disponible actualmente!</h2>
-                    <h3>Lamentablemente no encontramos la página que estabas buscando!</h3>
+                    <img class="portada__noencontradoError" src="./images/error-runclub.svg" alt="Icono error RunClub">
+                    <h2>¡El contenido que buscas no está disponible!</h2>
+                    <p>Parece que nos fuimos a correr y nos olvidamos de subir el contenido que estabas buscando. ¡Seguí navegando nuestra web y volvé más tarde!</p>
+                    <a href="./runclub.html" class="btRun-med portada__noEncontradoBoton">SEGUIR NAVEGANDO</a>
                 </span>
             </article>
         </section>
