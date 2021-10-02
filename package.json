@@ -1,0 +1,26 @@
+{
+    "name": "entrega-final",
+    "version": "1.0.0",
+    "description": "Curso de Desarrollo HTML - Proyecto RunClub",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "node-sass --include-path scss scss/main.scss css/newEstilos.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alvaroguzmandg/coderhouse.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/alvaroguzmandg/coderhouse/issues"
+    },
+    "homepage": "https://github.com/alvaroguzmandg/coderhouse#readme",
+    "devDependencies": {
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.13"
+    },
+    "dependencies": {}
+}
