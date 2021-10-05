@@ -1,0 +1,23 @@
+a.btRun-sm {
+    @include accesosRunclub (white, $fondoPrincipal, 5px, auto, lowercase, 1rem, 10px auto);
+    &:hover {
+        background-color: $colorRunClub;
+    }
+}
+
+a.btRun-med {
+    @include accesosRunclub ($colorRunClub, $fondoPrincipal, 10px 0px, 100px, uppercase, 1.5rem, 10px auto);
+    &:hover {
+        background-color: $colorRunClub;
+        color: #ffffff;
+    }
+}
+
+a.btRun-large {
+    @include accesosRunclub (black, white, 10px 20px, 200px, uppercase, 1.6rem, 10px auto);
+    text-align: center;
+    &:hover {
+        background-color: $colorRunClub;
+        color: #ffffff;
+    }
+}

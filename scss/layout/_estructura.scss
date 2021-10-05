@@ -1,0 +1,63 @@
+/*TAMAÑOS CONTENEDORES */
+
+.bloqueContenido {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.bloqueContenido--sm {
+    @extend .bloqueContenido;
+    @include estructuraContenido(700px, auto)
+}
+
+.bloqueContenido--md {
+    @extend .bloqueContenido;
+    @include estructuraContenido(900px, auto)
+}
+
+.bloqueContenido--lg {
+    @extend .bloqueContenido;
+    @include estructuraContenido(1200px, auto)
+}
+
+.bloqueContenido--xl {
+    @extend .bloqueContenido;
+    @include estructuraContenido(1366px, auto)
+}
+
+.bloqueContenido--xxl {
+    @extend .bloqueContenido;
+    @include estructuraContenido(1920px, auto)
+}
+
+.bloqueContenido--xxl {
+    @extend .bloqueContenido;
+    @include estructuraContenido(100%, auto)
+}
+
+
+/* PORTADAS */
+
+.portada {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.portada__home {
+    background-image: url(../images/portadas/portada.png);
+    height: 600px;
+    h1 {
+        animation-duration: 4s;
+    }
+}

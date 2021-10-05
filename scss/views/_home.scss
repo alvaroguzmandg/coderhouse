@@ -1,0 +1,96 @@
+/* SECCION NOVEDADES */
+
+.novedades {
+    display: flex;
+    gap: 0px;
+    align-items: stretch;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    article {
+        grid-column-end: span 3;
+        box-sizing: border-box;
+        height: 600px;
+        text-align: center;
+        background-size: cover;
+        display: flex;
+        align-items: center
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    h4 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 130px;
+    }
+    .novedades__contenido {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .novedades__bloque--noticia {
+        background-image: url(../images/novedad-noticia.png);
+    }
+    .novedades__bloque--editorial {
+        background-image: url(../images/novedad-editorial.png);
+    }
+    .novedades__bloque--entrenamiento {
+        background-image: url(../images/novedad-entrenamiento.png);
+    }
+    .novedades__bloque--biografia {
+        background-image: url(../images/novedad-biografia.png);
+    }
+}
+
+
+/* SECCIÓN ENTRENA CON NOSOTROS */
+
+.entrenaConNosotros {
+    margin: 80px auto;
+    text-align: center;
+    h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        word-spacing: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        font-weight: 300;
+        color: $textoPrincipal;
+        text-align: center;
+    }
+    .entrenaConNosotros__bloqueCentral {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    .accesoConNosotros__bloque1 img {
+        width: 100%;
+    }
+    .accesoConNosotros__bloque2 {
+        grid-column-end: span 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

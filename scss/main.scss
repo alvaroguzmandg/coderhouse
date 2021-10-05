@@ -2,6 +2,11 @@
 @import './utilities/_mixins.scss';
 @import './base/_resets.scss';
 @import './layout/_footer.scss';
+@import './layout/_header.scss';
+@import './layout/_estructura.scss';
+@import './views/_generales.scss';
+@import './views/_home.scss';
+@import './componentes/_botones.scss';
 section.contenedorEventos {
     margin-top: 30px;
     .contenedorEventos__eventosAnteriores {

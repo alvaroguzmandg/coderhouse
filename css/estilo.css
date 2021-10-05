@@ -6,15 +6,6 @@
     border: 0px;
 }
 
-.espaciadorSuperiorInferior {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.destacadoClub {
-    color: var(--destacadoClub);
-}
-
 .accordion-button:focus {
     border-color: var(--destacadoClub)!important;
 }
@@ -24,43 +15,9 @@
     background-color: #ffffff;
 }
 
-section.portada {
-    text-align: center;
-    padding: 0;
-}
-
-section.portada img {
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.textoEncabezado {
-    margin: 0 auto;
-    width: 700px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 3rem;
-    font-weight: 300;
-    color: var(--colorTextoPrincipal);
-    text-align: center;
-}
-
-a.seguirLeyendo {
-    display: block;
-    font-size: 1.1rem;
-    text-decoration: underline;
-    letter-spacing: 1px;
-    color: var(--colorTextoPrincipal);
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
 section#runclubAccesoBiografias article a:hover,
 .seguirLeyendo:hover {
-    color: var(--destacadoClub);
+    color: $colorRunClub;
 }
 
 .verMas {
@@ -78,7 +35,7 @@ section#runclubAccesoBiografias article a:hover,
 }
 
 .verMas:hover {
-    background-color: var(--destacadoClub);
+    background-color: $colorRunClub;
     color: #ffffff;
 }
 
@@ -94,135 +51,7 @@ section#runclubAccesoBiografias article a:hover,
 }
 
 
-/* ESTILOS HEADER */
-
-header {
-    width: 100%;
-    background-color: var(--colorFondoPrincipal);
-    clear: both;
-    top: 0px;
-}
-
-.logoSitio img {
-    width: 130px;
-}
-
-.contenidoSemiFull {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-
-.navbar-dark-color {
-    color: red
-}
-
-a.nav-run:hover {
-    color: var(--destacadoClub);
-}
-
-a.nav-run-drop,
-a.nav-run-drop:hover {
-    color: #fff;
-}
-
-.nav-run {
-    display: inline-block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.nav-run-drop {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    display: block;
-    padding: 8px;
-}
-
-nav ul li li:hover,
-nav ul li ul a:hover {
-    background-color: var(--destacadoClub);
-    color: white;
-}
-
-ul.dropdown-menu.dropdown-menu-dark.dropdown-run.show {
-    top: auto;
-    left: auto;
-}
-
-.dropdown-menu-dark {
-    background-color: var(--colorFondoPrincipal);
-}
-
-.dropdown-menu {
-    border-radius: 0;
-    border: 0;
-    padding: 0;
-}
-
-#navMobile {
-    display: none;
-}
-
-.destBoton:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
-}
-
-
-/* FIN ESTILOS HEADER */
-
-
 /* ESTILOS INDEX */
-
-section#portadaSitio {
-    background-image: url(../images/portadas/portada.png);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 600px;
-}
-
-section#portadaSitio h1 {
-    animation-duration: 4s;
-}
-
-section#portadaSitio a:hover {
-    background-color: var(--destacadoClub);
-}
-
-section#novedades {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    background-color: black;
-    color: white;
-}
-
-section#novedades .grillaRunClub {
-    gap: 0;
-}
-
-section#novedades article {
-    grid-column-end: span 3;
-    box-sizing: border-box;
-    height: 600px;
-    text-align: center;
-    background-size: cover;
-    display: flex;
-}
 
 .contenidoNovedad {
     width: 90%;
