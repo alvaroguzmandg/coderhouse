@@ -31,7 +31,7 @@
     @include estructuraContenido(1920px, auto)
 }
 
-.bloqueContenido--xxl {
+.bloqueContenido--xxxl {
     @extend .bloqueContenido;
     @include estructuraContenido(100%, auto)
 }

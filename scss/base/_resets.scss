@@ -11,31 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    color: $textoPrincipal;
-    font-weight: 700;
-    font-size: 6rem;
-}
-
-h1 .destacadoClub {
-    font-size: 6rem;
-}
-
-h2 {
-    color: $colorRunClub;
-    ;
-    font-weight: 700;
-    text-align: center;
-}
-
 a {
     text-decoration: none;
-}
-
-hr {
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border: 1px solid #666666;
+    text-align: center;
 }

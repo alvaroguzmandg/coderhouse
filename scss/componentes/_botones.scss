@@ -1,12 +1,12 @@
 a.btRun-sm {
-    @include accesosRunclub (white, $fondoPrincipal, 5px, auto, lowercase, 1rem, 10px auto);
+    @include accesosRunclub (white, $fondoPrincipal, 5px 10px, auto, lowercase, 1rem, 10px auto);
     &:hover {
         background-color: $colorRunClub;
     }
 }
 
 a.btRun-med {
-    @include accesosRunclub ($colorRunClub, $fondoPrincipal, 10px 0px, 100px, uppercase, 1.5rem, 10px auto);
+    @include accesosRunclub (white, $fondoPrincipal, 10px 0px, 100px, uppercase, 1.5rem, 10px auto);
     &:hover {
         background-color: $colorRunClub;
         color: #ffffff;
@@ -14,10 +14,17 @@ a.btRun-med {
 }
 
 a.btRun-large {
-    @include accesosRunclub (black, white, 10px 20px, 200px, uppercase, 1.6rem, 10px auto);
-    text-align: center;
+    @include accesosRunclub (white, $fondoPrincipal, 10px 20px, 200px, uppercase, 1.6rem, 10px auto);
     &:hover {
         background-color: $colorRunClub;
         color: #ffffff;
+    }
+}
+
+a.btRunDestacado-large {
+    @include accesosRunclub (white, $colorRunClub, 10px 0px, 200px, uppercase, 1.5rem, 10px auto);
+    &:hover {
+        color: $colorRunClub;
+        background-color: #ffffff;
     }
 }
