@@ -17,7 +17,7 @@
 
 section#runclubAccesoBiografias article a:hover,
 .seguirLeyendo:hover {
-    color: $colorRunClub;
+    color: #ff5500;
 }
 
 .verMas {
@@ -35,7 +35,7 @@ section#runclubAccesoBiografias article a:hover,
 }
 
 .verMas:hover {
-    background-color: $colorRunClub;
+    background-color: #ff5500;
     color: #ffffff;
 }
 
@@ -45,94 +45,8 @@ section#runclubAccesoBiografias article a:hover,
     gap: 20px;
 }
 
-.fondoGradient {
-    background: rgb(50, 50, 50);
-    background: radial-gradient(circle, rgba(50, 50, 50, 1) 0%, rgba(16, 15, 15, 1) 84%, rgba(0, 0, 0, 1) 100%);
-}
-
 
 /* ESTILOS INDEX */
-
-.contenidoNovedad {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-section#novedades article a:hover {
-    background-color: var(--destacadoClub);
-}
-
-section#novedades article#novedadNoticia {
-    background-image: url(../images/novedad-noticia.png);
-}
-
-section#novedades article#novedadEditorial {
-    background-image: url(../images/novedad-editorial.png);
-}
-
-section#novedades article#novedadEntrenamiento {
-    background-image: url(../images/novedad-entrenamiento.png);
-}
-
-section#novedades article#novedadBiografia {
-    background-image: url(../images/novedad-biografia.png);
-}
-
-section#novedades h3 {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-section#novedades h4 {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-section#novedades p {
-    font-size: 1.4rem;
-    line-height: 3rem;
-    font-weight: 300;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    height: 130px;
-}
-
-section#entrenaConNosotros {
-    width: 90%;
-    max-width: 1366px;
-    margin: 80px auto;
-    text-align: center;
-}
-
-section#entrenaConNosotros div.grillaRunClub {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.accesoConNosotros {
-    grid-column-end: span 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.accesoConNosotros h2 {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    word-spacing: 10px;
-}
-
-.accesoConNosotros p.textoEncabezado {
-    width: auto;
-}
-
-.accesoConNosotros img {
-    width: 100%;
-}
 
 
 /* ESTILOS PÁGINA NOSOTROS */
