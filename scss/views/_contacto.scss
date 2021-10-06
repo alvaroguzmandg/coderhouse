@@ -1,0 +1,64 @@
+.entrenaContacto {
+    margin: 40px auto;
+    text-align: center;
+    h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        word-spacing: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    .entrenaContacto__bloqueCentral {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    .entrenaContacto__bloque1 img {
+        width: 100%;
+    }
+    .entrenaContacto__bloque2 {
+        grid-column-end: span 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+form {
+    padding-top: 20px;
+    color: var(--colorTextoPrincipal);
+    text-align: center;
+    h3 {
+        color: $colorRunClub;
+        font-size: 2rem;
+    }
+    input {
+        background-color: #fff;
+        border: 0;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        margin: 10px auto;
+        color: #8d8d8d;
+        border-radius: 3px;
+        border: 1px solid #e5e5e5;
+        text-align: left;
+        width: 100%;
+    }
+    .botonEnviar {
+        display: block;
+        margin: 30px auto 0px;
+        width: 150px;
+        text-align: center;
+    }
+    .botonLimpiar {
+        width: 90px;
+        font-size: 1rem;
+        color: var(--colorTextoPrincipal);
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+    }
+}

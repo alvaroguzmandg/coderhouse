@@ -1,19 +1,20 @@
-a.btRun-sm {
-    @include accesosRunclub (white, $fondoPrincipal, 5px 10px, auto, lowercase, 1rem, 10px auto);
-    &:hover {
-        background-color: $colorRunClub;
-    }
-}
-
-a.btRun-med {
-    @include accesosRunclub (white, $fondoPrincipal, 10px 0px, 100px, uppercase, 1.5rem, 10px auto);
+.btRun-sm {
+    @include accesosRunclub (white, $fondoPrincipal, 5px 10px, auto, inherit, 1rem, 10px auto);
     &:hover {
         background-color: $colorRunClub;
         color: #ffffff;
     }
 }
 
-a.btRun-large {
+.btRun-med {
+    @include accesosRunclub (white, $fondoPrincipal, 10px 10px, auto, uppercase, 1.5rem, 10px auto);
+    &:hover {
+        background-color: $colorRunClub;
+        color: #ffffff;
+    }
+}
+
+.btRun-large {
     @include accesosRunclub (white, $fondoPrincipal, 10px 20px, 200px, uppercase, 1.6rem, 10px auto);
     &:hover {
         background-color: $colorRunClub;
@@ -21,7 +22,7 @@ a.btRun-large {
     }
 }
 
-a.btRunDestacado-large {
+.btRunDestacado-large {
     @include accesosRunclub (white, $colorRunClub, 10px 0px, 200px, uppercase, 1.5rem, 10px auto);
     &:hover {
         color: $colorRunClub;

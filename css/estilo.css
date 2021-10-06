@@ -411,59 +411,6 @@ td {
 
 /* ESTILOS PÁGINA CONTACTO */
 
-section#entrenaConNosotros.formularioContacto {
-    margin: 40px auto;
-}
-
-form {
-    padding-top: 20px;
-    color: var(--colorTextoPrincipal);
-    text-align: left;
-}
-
-.datosContacto div {
-    width: 90%;
-    margin: 0 auto;
-}
-
-div.tituloContacto h3 {
-    font-size: 3rem;
-}
-
-div.tituloContacto h3 span.destacadoClub {
-    font-size: 3rem;
-    display: block;
-}
-
-input {
-    background-color: #fff;
-    border: 0;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    margin: 10px auto;
-    color: #8d8d8d;
-    border-radius: 3px;
-    border: 1px solid #e5e5e5;
-    text-align: left;
-    width: 100%;
-}
-
-.botonEnviar {
-    display: block;
-    margin: 30px auto 0px;
-    width: 150px;
-    text-align: center;
-}
-
-.botonLimpiar {
-    width: 90px;
-    font-size: 1rem;
-    color: var(--colorTextoPrincipal);
-    margin: 10px auto;
-    text-align: center;
-    display: block;
-}
-
 
 /* FIN ESTILOS PÁGINA CONTACTO */
 

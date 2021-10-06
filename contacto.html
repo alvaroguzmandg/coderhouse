@@ -19,7 +19,6 @@
 
 <body>
     <header>
-
         <nav class="navbar navbar-expand-lg navbar-dark contenido--smallRun">
             <div class="container-fluid">
                 <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo"></a>
@@ -34,8 +33,6 @@
                         <li class="nav-item">
                             <a class="nav-run" href="./nosotros.html">NOSOTROS</a>
                         </li>
-
-
                         <li class="nav-item">
                             <a class="dropdown-toggle nav-run " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> RUNCLUB
                             </a>
@@ -57,15 +54,14 @@
                 </div>
             </div>
         </nav>
-
-
     </header>
+
     <main>
         <!-- INICIO CONTENIDO INICIAL -->
         <section class="portada">
             <img src="./images/portadas/portada-contacto.png" alt="Imagen de portada contacto">
             <h1>ENTRENÁ CON <span class="destacadoClub">NOSOTROS</span></h1>
-            <p class="textoEncabezado">Nunca es fácil probar algo nuevo. Pero es excelente. Porque no importa cuántas veces te caigas, siempre ganas algo. Probar cosas nuevas siempre es una victoria.
+            <p class="textosDestacados bloqueContenido--sm">Nunca es fácil probar algo nuevo. Pero es excelente. Porque no importa cuántas veces te caigas, siempre ganas algo. Probar cosas nuevas siempre es una victoria.
             </p>
 
 
@@ -74,35 +70,31 @@
 
 
 
-        <section id="entrenaConNosotros" class="formularioContacto" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="500">
-            <div class="grillaRunClub">
-                <div class="accesoConNosotros">
-                    <img src="./images/contactoRunClub.png" alt="Sumate a RunClub">
+        <section class="entrenaContacto bloqueContenido--lg" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="300">
+            <span class="entrenaContacto__bloqueCentral">
+                <div class="accesoConNosotros__bloque1">
+                    <img src="./images/contactoRunClub.png" alt="Nuestro coach - Entrená en RunClub">
                 </div>
-                <div class="accesoConNosotros datosContacto">
-                    <div class="tituloContacto">
-                        <h3>HACETE MIEMBRO <span class="destacadoClub">DE RUNCLUB</span></h3>
-
+                <div class="entrenaContacto__bloque2">
+                    
+                <!-- FORMULARIO DE REGISTRO -->
+                <form action="" method="GET">
+                    <h3>HACETE MIEMBRO DE RUNCLUB</h3>
+                    <div>
+                        <input type="text" placeholder="Dirección de correo electrónico" name="email" id="mail">
                     </div>
-                    <!-- FORMULARIO DE REGISTRO -->
-                    <form action="" method="GET">
-                        <div>
-                            <input type="text" placeholder="Dirección de correo electrónico" name="email" id="mail">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Nombre" name="nombre" id="name">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Apellido" name="apellido" id="name">
-                        </div>
-
-
-                        <input class="botonEnviar verMas" type="submit" value="Enviar Registro">
-                        <input class="botonLimpiar" type="reset" value="Limpiar datos">
-                    </form>
-                    <!-- FIN FORMULARIO REGISTRO -->
-                </div>
+                    <div>
+                        <input type="text" placeholder="Nombre" name="nombre" id="name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Apellido" name="apellido" id="name">
+                    </div>
+                    <input class="btRun-med" type="submit" value="Enviar Registro">
+                    <input class="botonLimpiar" type="reset" value="Limpiar datos">
+                </form>
+                <!-- FIN FORMULARIO REGISTRO -->
             </div>
+            </span>
         </section>
 
 

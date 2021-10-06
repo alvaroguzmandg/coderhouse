@@ -345,30 +345,85 @@ section.contenedorEventos {
   section.contenedorEventos .contenedorEventos__bloqueContenido:hover {
     transform: scale(1.05); }
 
-a.btRun-sm {
+.entrenaContacto {
+  margin: 40px auto;
+  text-align: center; }
+  .entrenaContacto h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    word-spacing: 10px; }
+  .entrenaContacto img {
+    width: 100%; }
+  .entrenaContacto .entrenaContacto__bloqueCentral {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px; }
+  .entrenaContacto .entrenaContacto__bloque1 img {
+    width: 100%; }
+  .entrenaContacto .entrenaContacto__bloque2 {
+    grid-column-end: span 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+
+form {
+  padding-top: 20px;
+  color: var(--colorTextoPrincipal);
+  text-align: center; }
+  form h3 {
+    color: #FF5500;
+    font-size: 2rem; }
+  form input {
+    background-color: #fff;
+    border: 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    color: #8d8d8d;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    text-align: left;
+    width: 100%; }
+  form .botonEnviar {
+    display: block;
+    margin: 30px auto 0px;
+    width: 150px;
+    text-align: center; }
+  form .botonLimpiar {
+    width: 90px;
+    font-size: 1rem;
+    color: var(--colorTextoPrincipal);
+    margin: 10px auto;
+    text-align: center;
+    display: block; }
+
+.btRun-sm {
   color: white;
   background-color: #232323;
   padding: 5px 10px;
   width: auto;
-  text-transform: lowercase;
+  text-transform: inherit;
   font-size: 1rem;
   margin: 10px auto; }
-  a.btRun-sm:hover {
-    background-color: #FF5500; }
-
-a.btRun-med {
-  color: white;
-  background-color: #232323;
-  padding: 10px 0px;
-  width: 100px;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  margin: 10px auto; }
-  a.btRun-med:hover {
+  .btRun-sm:hover {
     background-color: #FF5500;
     color: #ffffff; }
 
-a.btRun-large {
+.btRun-med {
+  color: white;
+  background-color: #232323;
+  padding: 10px 10px;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 10px auto; }
+  .btRun-med:hover {
+    background-color: #FF5500;
+    color: #ffffff; }
+
+.btRun-large {
   color: white;
   background-color: #232323;
   padding: 10px 20px;
@@ -376,11 +431,11 @@ a.btRun-large {
   text-transform: uppercase;
   font-size: 1.6rem;
   margin: 10px auto; }
-  a.btRun-large:hover {
+  .btRun-large:hover {
     background-color: #FF5500;
     color: #ffffff; }
 
-a.btRunDestacado-large {
+.btRunDestacado-large {
   color: white;
   background-color: #FF5500;
   padding: 10px 0px;
@@ -388,6 +443,6 @@ a.btRunDestacado-large {
   text-transform: uppercase;
   font-size: 1.5rem;
   margin: 10px auto; }
-  a.btRunDestacado-large:hover {
+  .btRunDestacado-large:hover {
     color: #FF5500;
     background-color: #ffffff; }
