@@ -1,38 +1,26 @@
 /*TAMAÑOS CONTENEDORES */
 
-.bloqueContenido {
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-}
-
 .bloqueContenido--sm {
-    @extend .bloqueContenido;
     @include estructuraContenido(700px, auto)
 }
 
 .bloqueContenido--md {
-    @extend .bloqueContenido;
     @include estructuraContenido(900px, auto)
 }
 
 .bloqueContenido--lg {
-    @extend .bloqueContenido;
     @include estructuraContenido(1200px, auto)
 }
 
 .bloqueContenido--xl {
-    @extend .bloqueContenido;
     @include estructuraContenido(1366px, auto)
 }
 
 .bloqueContenido--xxl {
-    @extend .bloqueContenido;
     @include estructuraContenido(1920px, auto)
 }
 
 .bloqueContenido--xxxl {
-    @extend .bloqueContenido;
     @include estructuraContenido(100%, auto)
 }
 

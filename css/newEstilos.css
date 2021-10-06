@@ -101,11 +101,6 @@ ul.dropdown-menu.dropdown-menu-dark.dropdown-run.show {
 
 /* FIN ESTILOS HEADER */
 /*TAMAÑOS CONTENEDORES */
-.bloqueContenido, .bloqueContenido--sm, .bloqueContenido--md, .bloqueContenido--lg, .bloqueContenido--xl, .bloqueContenido--xxl, .bloqueContenido--xxxl {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center; }
-
 .bloqueContenido--sm {
   max-width: 700px;
   height: auto; }
@@ -170,8 +165,8 @@ hr {
   border: 1px solid #666666; }
 
 .textosDestacados {
-  margin: 10 auto;
-  font-size: 16px;
+  margin: 10px auto;
+  font-size: 1rem;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 3rem;
