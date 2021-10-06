@@ -14,26 +14,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/newEstilos.css">
 </head>
 
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark contenidoSemiFull">
+        <nav class="navbar navbar-expand-lg navbar-dark contenido--smallRun">
             <div class="container-fluid">
-                <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo RunClub"></a>
+                <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-run" aria-current="page" href="./index.html">INICIO</a>
+                            <a class="nav-run destacadoClub" aria-current="page" href="./index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-run destacadoClub" href="./nosotros.html">NOSOTROS</a>
+                            <a class="nav-run" href="./nosotros.html">NOSOTROS</a>
                         </li>
 
 
@@ -59,44 +58,46 @@
             </div>
         </nav>
 
+
     </header>
     <main>
         <!-- INICIO CONTENIDO INICIAL -->
-        <section class="portada encabezadoStaff">
+        <section class="portada">
             <img src="./images/portadas/portada-nosotros.png" alt="Imagen de portada sección nosotros RunClub">
-            <div class="encabezadoDestacado">
+            <div class="encabezadoDestacado bloqueContenido--lg">
                 <h1>NOSOTROS SOMOS <span class="destacadoClub">RUNCLUB</span></h1>
-                <p class="textoEncabezado">Empezamos como un grupo de amigos que le gusta correr y tras 10 años de experiencia nos convertímos en la empresa líder sobre Running en Argentina. Tenemos como misión brindar un servicio integral a todos los apasionados del running. Organizamos
+                <p class="textosDestacados bloqueContenido--sm">Empezamos como un grupo de amigos que le gusta correr y tras 10 años de experiencia nos convertímos en la empresa líder sobre Running en Argentina. Tenemos como misión brindar un servicio integral a todos los apasionados del running. Organizamos
                     competencias de nivel internacional en todo el país, informamos sobre actualidad, novedades, lanzamientos y contamos con el running team más popular de Argentina.</p>
             </div>
         </section>
         <!-- FIN CONTENIDO INICIAL -->
 
         <!-- CONTENIDO STAFF -->
-        <section id="staff" class="fondoGradient espaciadorSuperiorInferior">
+        <section class="staff fondoGradient">
             <h2>STAFF</h2>
-            <div class="grillaRunClub">
-                <span class="miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+            <div class="staff__contenido bloqueContenido--lg">
+                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                 <h3>ÁLVARO <span class="destacadoClub">GUZMÁN</span></h3>
                 <img src="./images/nosotros-1.png" alt="Miembro Staff Álvaro Guzmán Responsable de creatividad RunClub">
                 <p>El sub3. Diseñador y Maratonista. Ponele un objetivo y no va a parar hasta cumplirlo. Responsable de la creatividad.</p>
                 </span>
-                <span class="miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                 <h3>SANTIAGO <span class="destacadoClub">OLIVIERI</span></h3>
                 <img src="./images/nosotros-2.png" alt="Miembro Staff Santiago Olivieri Organizador RunClub">
                 <p>Mr. Ultra. Especialista en correr montañas y rutas. Organizador y coordinador de cada uno de nuestros eventos.</p>
                 </span>
-                <span class="miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                 <h3>GONZALO <span class="destacadoClub">REY</span></h3>
                 <img src="./images/nosotros-3.png" alt="Miembro Staff Gonzalo Rey coordinador de equipos RunClub">
-                <p>El colo. El ordenado, ultra maratonista versátil. Coordinador de equipos de nuestras actividades.</p>
+                <p>El colo. El ordenado, ultra maratonista versátil. Coordinador de equipos y de cada una de nuestras actividades.</p>
                 </span>
-                <span class="miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                 <h3>MARIANO <span class="destacadoClub">TABANERA</span></h3>
                 <img src="./images/nosotros-4.png" alt="Miembro Staff Mariano Tabanera guía de aventura">
                 <p>El señor montaña. Nuestro guía en las carreras de aventura y especialista en todas nuestras novedades.</p>
                 </span>
             </div>
+
         </section>
         <!-- FIN CONTENIDO STAFF -->
 
@@ -168,7 +169,7 @@
 
 
     </main>
-    <footer class="footer">
+    <footer class="bloqueContenido--xxxl footer">
         <div class="footer__contenido">
             <div class="footer__informacion">
                 <h3>run<span class="destacadoClub">Club</span></h3>

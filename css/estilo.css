@@ -51,67 +51,6 @@ section#runclubAccesoBiografias article a:hover,
 
 /* ESTILOS PÁGINA NOSOTROS */
 
-.encabezadoDestacado {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-section#staff {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    text-align: center;
-    background-color: rgba(23, 23, 23, 1);
-    clear: both;
-}
-
-section#staff h2 {
-    padding-top: 20px;
-    font-size: 12rem;
-    line-height: 40px;
-    color: rgb(255, 85, 0, 0.2);
-}
-
-section#staff h3 {
-    color: white;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    padding-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-section#staff h3 .destacadoClub {
-    font-size: 1.8rem;
-}
-
-section#staff p {
-    color: white;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.2px;
-}
-
-section#staff div {
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-.miembroStaff {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px 10px;
-    grid-column-end: span 3;
-}
-
-.miembroStaff img {
-    width: 100%;
-}
-
-.miembroStaff p {
-    padding: 10px;
-}
-
 section#nosotrosGrillaFotos {
     padding-top: 30px;
     text-align: center;
