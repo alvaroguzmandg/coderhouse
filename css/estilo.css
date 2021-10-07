@@ -48,55 +48,6 @@ section#runclubAccesoBiografias article a:hover,
 
 /* ESTILOS PÁGINA RUNCLUB */
 
-section#runclubAccesoEditoriales {
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 30px;
-    background-color: var(--colorFondoPrincipal);
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-section#runclubAccesoEditoriales h2 {
-    color: rgba(255, 255, 255, 0.1);
-    margin-top: 10px;
-    font-size: 15rem;
-    line-height: 0rem;
-}
-
-section#runclubAccesoEditoriales article {
-    grid-column-end: span 6;
-    text-align: center;
-    padding-top: 50px;
-}
-
-section#runclubAccesoEditoriales article img {
-    width: 90%;
-    text-align: center;
-}
-
-section#runclubAccesoEditoriales article h3 {
-    color: rgba(255, 255, 255, 0.8);
-    padding-top: 10px;
-    font-size: 2rem;
-    font-weight: 900;
-    letter-spacing: 3px;
-}
-
-section#runclubAccesoEditoriales article p {
-    width: 70%;
-    font-weight: 300;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
-    margin: 0 auto;
-    color: white;
-}
-
-section#runclubAccesoEditoriales article a.seguirLeyendo {
-    color: var(--destacadoClub);
-}
-
 section#runclubAccesoEntrenamientos {
     width: 100%;
     padding-top: 40px;

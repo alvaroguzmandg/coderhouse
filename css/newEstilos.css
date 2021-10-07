@@ -533,6 +533,45 @@ form {
       letter-spacing: 0.1px;
       text-align: center; }
 
+.editorialesRunClub {
+  margin: 50px auto;
+  background-color: #232323;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .editorialesRunClub h2 {
+    color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
+    font-size: 13rem;
+    line-height: 1rem; }
+  .editorialesRunClub .editorialesRunClub__bloque {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; }
+  .editorialesRunClub article {
+    grid-column-end: span 6;
+    text-align: center;
+    padding-top: 50px; }
+  .editorialesRunClub img {
+    width: 90%;
+    text-align: center; }
+  .editorialesRunClub h3 {
+    color: rgba(255, 255, 255, 0.8);
+    padding-top: 10px;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 3px; }
+  .editorialesRunClub p {
+    width: 70%;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    color: white; }
+  .editorialesRunClub .seguirLeyendo {
+    color: #FF5500; }
+
 .btRun-sm {
   color: white;
   background-color: #232323;
