@@ -1,4 +1,10 @@
-/* SECCION NOVEDADES */
+.portada__home {
+    background-image: url(../images/portadas/portada.png);
+    height: 600px;
+    h1 {
+        animation-duration: 4s;
+    }
+}
 
 .novedades {
     display: flex;
