@@ -8,23 +8,53 @@ footer {
         justify-content: space-between;
         width: 90%;
         margin: 0 auto;
+        h3 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        .footer__texto {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .footer__accesos {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .footer__imagen {
+            width: 70%;
+        }
     }
-    h3 {
-        font-weight: 700;
-        font-size: 20px;
-    }
-    .footer__texto {
-        font-size: 12px;
-        font-weight: 500;
-        margin-bottom: 0;
-    }
-    .footer__accesos {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 5px;
-        margin-top: 5px;
-    }
-    .footer__imagen {
-        width: 70%;
+    @media only screen and (max-width:800px) {
+        padding: 20px;
+        .footer__contenido {
+            flex-direction: column;
+            text-align: center;
+            h3 {
+                font-size: 3rem;
+            }
+            .footer__redes {
+                margin-top: 10px;
+                p {
+                    color: $colorRunClub;
+                    font-size: 1.4rem;
+                    letter-spacing: 2px;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                    @media only screen and (max-width: 400px) {
+                        font-size: 1rem;
+                        line-height: 1rem;
+                    }
+                }
+            }
+            .footer__accesos {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
     }
 }

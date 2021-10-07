@@ -1,35 +1,4 @@
 @media only screen and (max-width:992px) {
-    #contenedorMenu {
-        width: 90%;
-    }
-    .textoEncabezado {
-        width: 80%;
-    }
-    /* ESTILOS INDEX */
-    section#novedades article {
-        grid-column-end: span 6;
-        background-position: center;
-        height: 400px;
-    }
-    section#novedades p {
-        width: 80%;
-        height: auto;
-    }
-    .accesoConNosotros h2 {
-        font-size: 2rem;
-    }
-    .accesoConNosotros p.textoEncabezado {
-        width: auto;
-        font-size: 1.2rem;
-        line-height: 2rem;
-    }
-    .eventosAnteriores {
-        gap: 5px;
-        row-gap: 10px;
-    }
-    h4.tituloEventoAnterior {
-        font-size: 90%;
-    }
     /* ESTILOS NOSOTROS */
     div.encabezadoDestacado h1 {
         width: 90%;
@@ -120,28 +89,6 @@
 }
 
 @media only screen and (max-width:600px) {
-    /* ESTILOS GENÉRICOS */
-    html {
-        font-size: 10px;
-    }
-    /* ESTILOS HEADER */
-    header {
-        height: auto;
-    }
-    nav ul {
-        display: flex;
-        justify-content: space-around
-    }
-    nav ul li {
-        padding: 5px;
-    }
-    nav ul li a {
-        font-size: 1rem;
-    }
-    .nav-run-drop {
-        font-size: 1.2rem;
-        padding: 10px 20px;
-    }
     /*ESTILOS FOOTER */
     footer div.contenidoSemiFull {
         display: flex;
@@ -160,44 +107,6 @@
         font-size: 1.4rem;
         margin-top: 10px;
         margin-bottom: 10px;
-    }
-    /* ESTILOS INDEX */
-    section#portadaSitio h1,
-    section#portadaSitio h1 .destacadoClub {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-        font-size: 4rem;
-        line-height: 4rem;
-    }
-    section#novedades article {
-        grid-column-end: span 12;
-        background-position: center;
-        padding: 0;
-        height: 500px;
-    }
-    section#novedades h4 {
-        font-size: 2.5rem;
-        letter-spacing: 1px;
-    }
-    section#novedades p {
-        font-size: 1.8rem;
-    }
-    .accesoConNosotros h2 {
-        font-size: 2.4rem;
-        line-height: 3rem;
-    }
-    .accesoConNosotros p.textoEncabezado {
-        width: auto;
-        font-size: 16px;
-        line-height: 30px;
-    }
-    section#novedades h3 {
-        font-size: 1.2rem;
-    }
-    section#novedades article a {
-        font-size: 1.3rem;
-        padding: 8px;
     }
     /* ESTILOS NOSOTROS */
     .miembroStaff {

@@ -67,6 +67,21 @@
             }
         }
     }
+    @media only screen and (max-width: 600px) {
+        article.novedades__bloque {
+            grid-column-end: span 12;
+            .novedades__contenido {
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    margin: 50px auto;
+                    font-size: 2rem;
+                    line-height: 4rem;
+                }
+            }
+        }
+    }
 }
 
 
@@ -99,14 +114,32 @@
         grid-template-columns: 2fr 1fr;
         gap: 20px;
     }
-    .accesoConNosotros__bloque1 img {
-        width: 100%;
+    .accesoConNosotros__bloque {
+        grid-column-end: span 1;
+        img {
+            width: 100%;
+        }
     }
     .accesoConNosotros__bloque2 {
         grid-column-end: span 1;
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+    @media only screen and (max-width: 900px) {
+        .entrenaConNosotros__bloqueCentral {
+            grid-template-columns: 1fr;
+        }
+        h2 {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+        p {
+            width: 90%;
+            max-width: 600px;
+            font-size: 1.6rem;
+            line-height: 3rem;
+        }
     }
 }
 
@@ -167,7 +200,7 @@
 }
 
 
-/* SECCIÓN EVENTOS aANTERIORES */
+/* SECCIÓN EVENTOS ANTERIORES */
 
 section.contenedorEventos {
     margin: 80px auto;
@@ -190,6 +223,10 @@ section.contenedorEventos {
         padding-top: 3%;
         margin: 0 auto;
         text-align: center;
+        &:hover {
+            transform: scale(1.05);
+            background-color: $colorRunClub;
+        }
     }
     .contenedorEventos__imagenEvento {
         width: 95%;
@@ -203,13 +240,31 @@ section.contenedorEventos {
         padding-bottom: 5px;
         text-transform: uppercase;
     }
-    .contenedorEventos__bloqueContenido:hover {
-        transform: scale(1.05);
-    }
     @media only screen and (max-width: 992px) {
         width: 90%;
         .contenedorEventos__eventosAnteriores {
             gap: 15px;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        h2 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        .contenedorEventos__eventosAnteriores {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .contenedorEventos__bloqueEvento {
+            width: 100%;
+            display: block;
+            grid-column-end: span 2;
+        }
+    }
+    @media only screen and (max-width:400px) {
+        .contenedorEventos__eventosAnteriores {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
