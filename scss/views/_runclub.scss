@@ -7,37 +7,56 @@
         letter-spacing: 3px;
     }
     .noticiasRunClub__bloque {
+        width: 90%;
         margin: 0 auto;
-        display: flex;
-        gap: 10px
-    }
-    article {
-        text-align: center;
-        padding: 1%;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        &:hover {
-            background-color: $fondoPrincipal;
-            color: white;
-            a {
-                color: $colorRunClub;
-            }
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
         }
-        img {
-            object-fit: contain;
-        }
-        h3 {
-            font-size: 1.8rem;
-            padding: 10px 0px;
-            font-weight: 900;
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 2rem;
-            letter-spacing: 0.1px;
+        article {
+            grid-column-end: span 4;
             text-align: center;
+            padding: 3%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            &:hover {
+                background-color: $fondoPrincipal;
+                color: white;
+                a {
+                    color: $colorRunClub;
+                }
+            }
+            img {
+                max-width: 100%;
+                object-fit: contain;
+            }
+            h3 {
+                font-size: 1.8rem;
+                padding: 10px 0px;
+                font-weight: 900;
+                @media only screen and (max-width: 800px) {
+                    margin-bottom: 0px;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 2rem;
+                letter-spacing: 0.1px;
+                text-align: center;
+                @media only screen and (max-width: 800px) {
+                    display: none;
+                }
+                @media only screen and (max-width: 600px) {
+                    display: block;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+            }
         }
     }
 }
@@ -52,6 +71,17 @@
         margin-top: 10px;
         font-size: 13rem;
         line-height: 1rem;
+        @media only screen and (max-width: 990px) {
+            font-size: 8rem;
+        }
+        @media only screen and (max-width: 900px) {
+            font-size: 4rem;
+            letter-spacing: 0rem;
+        }
+        @media only screen and (max-width: 300px) {
+            font-size: 3rem;
+            letter-spacing: 0rem;
+        }
     }
     .editorialesRunClub__bloque {
         margin: 0 auto;
@@ -63,6 +93,9 @@
         grid-column-end: span 6;
         text-align: center;
         padding-top: 50px;
+        @media only screen and (max-width: 990px) {
+            grid-column-end: span 12;
+        }
     }
     img {
         width: 90%;
@@ -83,6 +116,11 @@
         letter-spacing: 1px;
         margin: 0 auto;
         color: white;
+        @media only screen and (max-width: 990px) {
+            font-size: 1.4rem;
+            line-height: 3rem;
+            width: 80%;
+        }
     }
     .seguirLeyendo {
         color: $colorRunClub;
@@ -106,6 +144,13 @@
         align-items: center;
         background-position: center;
         margin-top: 10px;
+        @media only screen and (max-width: 992px) {
+            grid-column-end: span 6;
+            margin-top: 0px;
+        }
+        @media only screen and (max-width: 600px) {
+            grid-column-end: span 12;
+        }
         .biografiasRunClub__texto {
             width: 70%;
             margin: 0px auto;
@@ -120,6 +165,14 @@
                 .destacadoClub {
                     display: block;
                     font-size: 3rem;
+                    font-weight: 900;
+                    line-height: 3rem;
+                }
+                @media only screen and (max-width: 992px) {
+                    font-size: 2rem;
+                    .destacadoClub {
+                        font-size: 2.5rem;
+                    }
                 }
             }
         }

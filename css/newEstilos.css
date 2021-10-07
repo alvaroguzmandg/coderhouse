@@ -184,6 +184,9 @@ h2 {
   text-align: center;
   letter-spacing: 10px;
   font-size: 3rem; }
+  @media only screen and (max-width: 300px) {
+    h2 {
+      font-size: 2rem; } }
 
 hr {
   width: 600px;
@@ -618,32 +621,51 @@ section.contenedorEventos {
     font-size: 3rem;
     letter-spacing: 3px; }
   .noticiasRunClub .noticiasRunClub__bloque {
+    width: 90%;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     gap: 10px; }
-  .noticiasRunClub article {
-    text-align: center;
-    padding: 1%;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column; }
-    .noticiasRunClub article:hover {
-      background-color: #232323;
-      color: white; }
-      .noticiasRunClub article:hover a {
-        color: #FF5500; }
-    .noticiasRunClub article img {
-      object-fit: contain; }
-    .noticiasRunClub article h3 {
-      font-size: 1.8rem;
-      padding: 10px 0px;
-      font-weight: 900; }
-    .noticiasRunClub article p {
-      font-size: 1.2rem;
-      line-height: 2rem;
-      letter-spacing: 0.1px;
-      text-align: center; }
+    @media only screen and (max-width: 600px) {
+      .noticiasRunClub .noticiasRunClub__bloque {
+        display: flex;
+        flex-direction: column; } }
+    .noticiasRunClub .noticiasRunClub__bloque article {
+      grid-column-end: span 4;
+      text-align: center;
+      padding: 3%;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column; }
+      .noticiasRunClub .noticiasRunClub__bloque article:hover {
+        background-color: #232323;
+        color: white; }
+        .noticiasRunClub .noticiasRunClub__bloque article:hover a {
+          color: #FF5500; }
+      .noticiasRunClub .noticiasRunClub__bloque article img {
+        max-width: 100%;
+        object-fit: contain; }
+      .noticiasRunClub .noticiasRunClub__bloque article h3 {
+        font-size: 1.8rem;
+        padding: 10px 0px;
+        font-weight: 900; }
+        @media only screen and (max-width: 800px) {
+          .noticiasRunClub .noticiasRunClub__bloque article h3 {
+            margin-bottom: 0px; } }
+      .noticiasRunClub .noticiasRunClub__bloque article p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        letter-spacing: 0.1px;
+        text-align: center; }
+        @media only screen and (max-width: 800px) {
+          .noticiasRunClub .noticiasRunClub__bloque article p {
+            display: none; } }
+        @media only screen and (max-width: 600px) {
+          .noticiasRunClub .noticiasRunClub__bloque article p {
+            display: block;
+            font-size: 1.4rem;
+            line-height: 2rem; } }
 
 .editorialesRunClub {
   margin: 50px auto;
@@ -655,6 +677,17 @@ section.contenedorEventos {
     margin-top: 10px;
     font-size: 13rem;
     line-height: 1rem; }
+    @media only screen and (max-width: 990px) {
+      .editorialesRunClub h2 {
+        font-size: 8rem; } }
+    @media only screen and (max-width: 900px) {
+      .editorialesRunClub h2 {
+        font-size: 4rem;
+        letter-spacing: 0rem; } }
+    @media only screen and (max-width: 300px) {
+      .editorialesRunClub h2 {
+        font-size: 3rem;
+        letter-spacing: 0rem; } }
   .editorialesRunClub .editorialesRunClub__bloque {
     margin: 0 auto;
     display: grid;
@@ -664,6 +697,9 @@ section.contenedorEventos {
     grid-column-end: span 6;
     text-align: center;
     padding-top: 50px; }
+    @media only screen and (max-width: 990px) {
+      .editorialesRunClub article {
+        grid-column-end: span 12; } }
   .editorialesRunClub img {
     width: 90%;
     text-align: center; }
@@ -681,6 +717,11 @@ section.contenedorEventos {
     letter-spacing: 1px;
     margin: 0 auto;
     color: white; }
+    @media only screen and (max-width: 990px) {
+      .editorialesRunClub p {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        width: 80%; } }
   .editorialesRunClub .seguirLeyendo {
     color: #FF5500; }
 
@@ -700,6 +741,13 @@ section.contenedorEventos {
     align-items: center;
     background-position: center;
     margin-top: 10px; }
+    @media only screen and (max-width: 992px) {
+      .biografiasRunClub article {
+        grid-column-end: span 6;
+        margin-top: 0px; } }
+    @media only screen and (max-width: 600px) {
+      .biografiasRunClub article {
+        grid-column-end: span 12; } }
     .biografiasRunClub article .biografiasRunClub__texto {
       width: 70%;
       margin: 0px auto;
@@ -713,7 +761,14 @@ section.contenedorEventos {
         margin-bottom: 30px; }
         .biografiasRunClub article .biografiasRunClub__texto h3 .destacadoClub {
           display: block;
-          font-size: 3rem; }
+          font-size: 3rem;
+          font-weight: 900;
+          line-height: 3rem; }
+        @media only screen and (max-width: 992px) {
+          .biografiasRunClub article .biografiasRunClub__texto h3 {
+            font-size: 2rem; }
+            .biografiasRunClub article .biografiasRunClub__texto h3 .destacadoClub {
+              font-size: 2.5rem; } }
     .biografiasRunClub article a {
       color: white; }
       .biografiasRunClub article a:hover {
