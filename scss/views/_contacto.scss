@@ -1,6 +1,9 @@
 .entrenaContacto {
     margin: 40px auto;
     text-align: center;
+    @media only screen and (max-width: 900px) {
+        margin: 0 auto;
+    }
     h2 {
         font-size: 2.5rem;
         letter-spacing: 1px;
@@ -15,9 +18,15 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 20px;
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
     }
-    .entrenaContacto__bloque1 img {
-        width: 100%;
+    .accesoConNosotros__bloque {
+        grid-column-end: span 1;
+        img {
+            width: 100%;
+        }
     }
     .entrenaContacto__bloque2 {
         grid-column-end: span 1;
@@ -25,40 +34,42 @@
         justify-content: center;
         flex-direction: column;
     }
-}
-
-form {
-    padding-top: 20px;
-    color: var(--colorTextoPrincipal);
-    text-align: center;
-    h3 {
-        color: $colorRunClub;
-        font-size: 2rem;
-    }
-    input {
-        background-color: #fff;
-        border: 0;
-        padding: 10px 10px;
-        box-sizing: border-box;
-        margin: 10px auto;
-        color: #8d8d8d;
-        border-radius: 3px;
-        border: 1px solid #e5e5e5;
-        text-align: left;
-        width: 100%;
-    }
-    .botonEnviar {
-        display: block;
-        margin: 30px auto 0px;
-        width: 150px;
-        text-align: center;
-    }
-    .botonLimpiar {
-        width: 90px;
-        font-size: 1rem;
+    form {
+        padding-top: 20px;
         color: var(--colorTextoPrincipal);
-        margin: 10px auto;
         text-align: center;
-        display: block;
+        h3 {
+            color: $colorRunClub;
+            font-size: 2rem;
+        }
+        .entrenaContacto_campo {
+            input {
+                background-color: #fff;
+                border: 0;
+                padding: 10px 10px;
+                box-sizing: border-box;
+                margin: 10px auto;
+                color: #8d8d8d;
+                border-radius: 3px;
+                text-align: left;
+                width: 100%;
+                border: 1px solid #e5e5e5;
+            }
+        }
+        .botonEnviar {
+            display: block;
+            margin: 30px auto 0px;
+            text-align: center;
+            border: 1px solid #e5e5e5;
+        }
+        .botonLimpiar {
+            width: 90px;
+            font-size: 1rem;
+            color: var(--colorTextoPrincipal);
+            margin: 10px auto;
+            text-align: center;
+            display: block;
+            border: 1px solid #e5e5e5;
+        }
     }
 }

@@ -171,7 +171,7 @@ h1 {
   color: #232323;
   font-weight: 700;
   font-size: 6rem; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 900px) {
     h1 {
       font-size: 5rem;
       line-height: 5rem;
@@ -437,6 +437,9 @@ section.contenedorEventos {
 .entrenaContacto {
   margin: 40px auto;
   text-align: center; }
+  @media only screen and (max-width: 900px) {
+    .entrenaContacto {
+      margin: 0 auto; } }
   .entrenaContacto h2 {
     font-size: 2.5rem;
     letter-spacing: 1px;
@@ -449,44 +452,49 @@ section.contenedorEventos {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px; }
-  .entrenaContacto .entrenaContacto__bloque1 img {
-    width: 100%; }
+    @media only screen and (max-width: 900px) {
+      .entrenaContacto .entrenaContacto__bloqueCentral {
+        grid-template-columns: 1fr; } }
+  .entrenaContacto .accesoConNosotros__bloque {
+    grid-column-end: span 1; }
+    .entrenaContacto .accesoConNosotros__bloque img {
+      width: 100%; }
   .entrenaContacto .entrenaContacto__bloque2 {
     grid-column-end: span 1;
     display: flex;
     justify-content: center;
     flex-direction: column; }
-
-form {
-  padding-top: 20px;
-  color: var(--colorTextoPrincipal);
-  text-align: center; }
-  form h3 {
-    color: #FF5500;
-    font-size: 2rem; }
-  form input {
-    background-color: #fff;
-    border: 0;
-    padding: 10px 10px;
-    box-sizing: border-box;
-    margin: 10px auto;
-    color: #8d8d8d;
-    border-radius: 3px;
-    border: 1px solid #e5e5e5;
-    text-align: left;
-    width: 100%; }
-  form .botonEnviar {
-    display: block;
-    margin: 30px auto 0px;
-    width: 150px;
-    text-align: center; }
-  form .botonLimpiar {
-    width: 90px;
-    font-size: 1rem;
+  .entrenaContacto form {
+    padding-top: 20px;
     color: var(--colorTextoPrincipal);
-    margin: 10px auto;
-    text-align: center;
-    display: block; }
+    text-align: center; }
+    .entrenaContacto form h3 {
+      color: #FF5500;
+      font-size: 2rem; }
+    .entrenaContacto form .entrenaContacto_campo input {
+      background-color: #fff;
+      border: 0;
+      padding: 10px 10px;
+      box-sizing: border-box;
+      margin: 10px auto;
+      color: #8d8d8d;
+      border-radius: 3px;
+      text-align: left;
+      width: 100%;
+      border: 1px solid #e5e5e5; }
+    .entrenaContacto form .botonEnviar {
+      display: block;
+      margin: 30px auto 0px;
+      text-align: center;
+      border: 1px solid #e5e5e5; }
+    .entrenaContacto form .botonLimpiar {
+      width: 90px;
+      font-size: 1rem;
+      color: var(--colorTextoPrincipal);
+      margin: 10px auto;
+      text-align: center;
+      display: block;
+      border: 1px solid #e5e5e5; }
 
 .staff {
   padding-top: 30px;
