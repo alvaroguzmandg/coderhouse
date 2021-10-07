@@ -409,6 +409,7 @@ form {
 .staff {
   padding-top: 30px;
   padding-bottom: 50px;
+  margin: 50px auto;
   text-align: center; }
   .staff .staff__contenido {
     display: flex;
@@ -441,6 +442,43 @@ form {
       width: 100%; }
     .staff .staff_miembroStaff p {
       padding: 10px; }
+
+.grillaFotos {
+  padding-top: 30px;
+  text-align: center; }
+  .grillaFotos h2 {
+    font-size: 3rem;
+    letter-spacing: 0px; }
+  .grillaFotos .grillaFotos__galeria {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    gap: 10px; }
+  .grillaFotos .grillaFotos__foto {
+    display: block;
+    height: 150px;
+    text-align: center;
+    transition: 1s;
+    border-radius: 0px; }
+    .grillaFotos .grillaFotos__foto img {
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+      transition: all .9s ease;
+      border-radius: 5px; }
+      .grillaFotos .grillaFotos__foto img:hover {
+        transform: scale(1.8);
+        transition: 1s;
+        opacity: 1;
+        position: relative; }
+    .grillaFotos .grillaFotos__foto:hover {
+      border-radius: 50px; }
+      .grillaFotos .grillaFotos__foto:hover img {
+        opacity: 1;
+        z-index: 9999; }
 
 .btRun-sm {
   color: white;
