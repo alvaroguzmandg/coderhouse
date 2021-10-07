@@ -18,8 +18,7 @@
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark contenidoSemiFull">
+        <nav class="navbar navbar-expand-lg navbar-dark bloqueContenido--xl">
             <div class="container-fluid">
                 <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +46,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-run destacadoClub" href="./eventos.html">EVENTOS</a>
+                            <a class="nav-run  destacadoClub" href="./eventos.html">EVENTOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-run" href="./contacto.html">CONTACTO</a>
@@ -56,25 +55,23 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main>
         <!-- INICIO CONTENIDO INICIAL -->
-        <section class="portada container-fluid">
+        <section class="portada">
             <img src="./images/portadas/portada-eventos.png" alt="Imagen de portada sección eventos">
             <h1>PRÓXIMOS <span class="destacadoClub">EVENTOS</span></h1>
-            <p class="textoEncabezado">¡Acá podrás conocer las carreras nacionales e internacionales más importantes del mundo!</p>
+            <p class="textosDestacados ">¡Acá podrás conocer las carreras nacionales e internacionales más importantes del mundo!</p>
         </section>
         <!-- FIN CONTENIDO INICIAL -->
         <!-- CONTENIDO CALENDARIO -->
-        <section class="container">
+        <section class="proximosEventos bloqueContenido--lg">
             <article class="table-responsive">
                 <table class="table table-sm table-dark table-striped table-hover">
                     <thead>
                         <tr>
                             <th scope="col" class="destacadoClub">FECHA</th>
                             <th scope="col" class="destacadoClub">CARRERA</th>
-                            <th scope="col" class="destacadoClub">DISTANCIA</th>
                             <th scope="col" class="destacadoClub">LUGAR</th>
                             <th scope="col" class="destacadoClub">INSCRIPCIÓN</th>
                         </tr>
@@ -83,56 +80,48 @@
                         <tr>
                             <td>4 DE SEPTIEMBRE</td>
                             <td>MARATÓN MENDOZA</td>
-                            <td>42K</td>
                             <td>Ciudad de Mendoza</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
                         <tr>
                             <td>5 DE SEPTIEMBRE</td>
                             <td>VALHOLL ULTRATRAIL</td>
-                            <td>50K</td>
                             <td>Villa Gral. Belgrano</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
                         <tr>
                             <td>19 DE SEPTIEMBRE</td>
                             <td>MARATÓN ROSARIO</td>
-                            <td>42K</td>
                             <td>Santa Fe</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
                         <tr>
                             <td>25 DE SEPTIEMBRE</td>
                             <td>DESTINO MADRYN</td>
-                            <td>26k</td>
                             <td>Puerto Madryn</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
                         <tr>
                             <td>26 DE SEPTIEMBRE</td>
                             <td>MARATÓN DE MADRID</td>
-                            <td>42K</td>
                             <td>Madrid, España</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
                         <tr>
                             <td>4 DE OCTUBRE</td>
                             <td>MARATÓN DE LONDRES</td>
-                            <td>42K</td>
                             <td>Londres, Inglaterra</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
                         <tr>
                             <td>10 DE OCTUBRE</td>
                             <td>K SERIES</td>
-                            <td>42K</td>
                             <td>San Martín de los Andes</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
                         <tr class="vertical-align: middle;">
                             <td>10 DE OCTUBRE</td>
                             <td>MARATÓN DE BUENOS AIRES</td>
-                            <td>42K</td>
                             <td>Ciudad de Buenos Aires</td>
                             <td><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-secondary btn-sm">INSCRIBIRME</a></td>
                         </tr>
@@ -156,34 +145,19 @@
                         </div>
                     </tbody>
                 </table>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
 
             </article>
         </section>
 
 
+
         <!-- CONTENIDO EVENTOS ANTERIORES -->
-        <section class="contenedorEventos">
+        <section class="contenedorEventos bloqueContenido--xl">
             <h2 class="contenedorEventos__titulo destacadoClub">EVENTOS ANTERIORES</h2>
-            <p class="textoEncabezado">En RunClub contamos con un equipo de fotografos de carreras deportivas. Nuestro objetivo fue pensarlo y desarrollarlo para que los corredores de nuestro equipo se lleven los mejores recuerdos de cada una de las carreras en que participen.</p>
-            <div class="contenedorEventos__eventosAnteriores">
+            <p class="bloqueContenido--sm textosDestacados">En RunClub contamos con un equipo de fotografos de carreras deportivas. Nuestro objetivo fue pensarlo y desarrollarlo para que los corredores de nuestro equipo se lleven los mejores recuerdos de cada una de las carreras en que participen.</p>
+            <div class="contenedorEventos__eventosAnteriores bloqueContenido--lg">
                 <article class="contenedorEventos__bloqueEvento" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <a href="./galeria-evento.html">
                         <span class="contenedorEventos__bloqueContenido">
@@ -194,7 +168,7 @@
                 </article>
                 <article class="contenedorEventos__bloqueEvento" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <a href="./galeria-evento.html">
-                        <span class="contenedorEventos__bloqueContenido2">
+                        <span class="contenedorEventos__bloqueContenido">
                             <img class="contenedorEventos__imagenEvento" src="./images/evento_anterior2.png" alt="21k de Buenos Aires 2021">
                             <h4 class="contenedorEventos__tituloEventoAnterior">21k Buenos Aires 2021</h4>
                         </span>
@@ -210,20 +184,20 @@
                 </article>
                 <article class="contenedorEventos__bloqueEvento" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <a href="./galeria-evento.html">
-                        <span class="contenedorEventos__bloqueContenido2">
+                        <span class="contenedorEventos__bloqueContenido">
                             <img class="contenedorEventos__imagenEvento" src="./images/evento_anterior4.png" alt="Maratón y media maratón de Rosario 2021">
                             <h4 class="contenedorEventos__tituloEventoAnterior">42k de Rosario 2021</h4>
                         </span>
                     </a>
                 </article>
             </div>
-            <a href="./eventos.html" class="contenedorEventos__boton verMas">¡VER MÁS EVENTOS!</a>
+
         </section>
         <!-- FIN EVENTOS ANTERIORES -->
 
 
     </main>
-    <footer class="footer">
+    <footer class="bloqueContenido--xxxl footer">
         <div class="footer__contenido">
             <div class="footer__informacion">
                 <h3>run<span class="destacadoClub">Club</span></h3>
