@@ -14,14 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/newEstilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark contenidoSemiFull">
+        <nav class="navbar navbar-expand-lg navbar-dark bloqueContenido--lg">
             <div class="container-fluid">
                 <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,75 +56,72 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main>
 
         <!-- CONTENIDO PRINCIPAL -->
-        <section id="portadaSitio">
+        <section class="portada portada__home">
             <h1 class="animate__animated  animate__fadeIn">SOMOS <span class="destacadoClub">RUNCLUB</span></h1>
-            <p class="textoEncabezado">De origen, somos un grupo de amigos apasionados por el Running. Organizamos carreras, compartimos noticias, contamos historias, sacamos muchas fotos y por sobre todo, transmitimos la pasión por este estilo de vida.</p>
+            <p class="textosDestacados bloqueContenido--sm">De origen, somos un grupo de amigos apasionados por el Running. Organizamos carreras, compartimos noticias, contamos historias, sacamos muchas fotos y por sobre todo, transmitimos la pasión por este estilo de vida.</p>
             <a class="btRun-sm" href="./nosotros.html">conocenos</a>
         </section>
         <!-- FIN CONTENIDO PRINCIPAL -->
 
         <!-- CONTENIDO RUNCLUB -->
-        <section id="novedades">
-            <div class="grillaRunClub">
-                <article id="novedadNoticia">
-                    <div class="contenidoNovedad">
-                        <h3>#NOTICIAS</h3>
-                        <h4>PEGASUS 38</h4>
-                        <p>Con pequeños ajustes del modelo anterior, esta zapatilla busca continuar aumentando su estatus de más confiable para entrenar.</p>
-                        <a href="./runclub.html#runclubAccesoNoticias" class="btRun-sm">ver más</a>
-                    </div>
-                </article>
-                <article id="novedadEditorial">
-                    <div class="contenidoNovedad">
-                        <h3>#EDITORIALES</h3>
-                        <h4>TITAN DESERT</h4>
-                        <p>Titan Desert 2020. Documental de la Titan Desert Almería, con Saleta Castro y Valentí Sanjuan compitiendo en la categoría dúo.</p>
-                        <a href="./runclub.html#runclubAccesoEditoriales" class="btRun-sm">ver más</a>
-                    </div>
-                </article>
-                <article id="novedadEntrenamiento">
-                    <div class="contenidoNovedad">
-                        <h3>#ENTRENAMIENTOS</h3>
-                        <h4>PURO FONDO</h4>
-                        <p>El mejor amigo del corredor. El fondo, que te mejora la capacidad aeróbica y la resistencia. Claves, secretos y consejos para mejorar.</p>
-                        <a href="./runclub.html#runclubAccesoEntrenamientos" class="btRun-sm">ver más</a>
-                    </div>
-                </article>
-                <article id="novedadBiografia">
-                    <div class="contenidoNovedad">
-                        <h3>#BIOGRAFÍAS</h3>
-                        <h4>EL REY KIPCHOGE</h4>
-                        <p>Ha sido el atleta que ha roto todas las barreras de los 42.195 metros, campeón olímpico, mundial, una leyenda viviente.</p>
-                        <a href="./runclub.html#runclubAccesoBiografias" class="btRun-sm">ver más</a>
-                    </div>
-                </article>
-            </div>
+        <section class="novedades bloqueContenido--xxxl ">
+            <article class="novedades__bloque novedades__bloque--noticia">
+                <div class="novedades__contenido">
+                    <h3>#NOTICIAS</h3>
+                    <h4>PEGASUS 38</h4>
+                    <p>Con pequeños ajustes del modelo anterior, esta zapatilla busca continuar aumentando su estatus de más confiable para entrenar.</p>
+                    <a href="./runclub.html#runclubAccesoNoticias" class="btRun-sm">ver más</a>
+                </div>
+            </article>
+            <article class="novedades__bloque novedades__bloque--editorial">
+                <div class="novedades__contenido">
+                    <h3>#EDITORIALES</h3>
+                    <h4>TITAN DESERT</h4>
+                    <p>Titan Desert 2020. Documental de la Titan Desert Almería, con Saleta Castro y Valentí Sanjuan compitiendo en la categoría dúo.</p>
+                    <a href="./runclub.html#runclubAccesoEditoriales" class="btRun-sm">ver más</a>
+                </div>
+            </article>
+            <article class="novedades__bloque novedades__bloque--entrenamiento">
+                <div class="novedades__contenido">
+                    <h3>#ENTRENAMIENTOS</h3>
+                    <h4>PURO FONDO</h4>
+                    <p>El mejor amigo del corredor. El fondo, que te mejora la capacidad aeróbica y la resistencia. Claves, secretos y consejos para mejorar.</p>
+                    <a href="./runclub.html#runclubAccesoEntrenamientos" class="btRun-sm">ver más</a>
+                </div>
+            </article>
+            <article class="novedades__bloque novedades__bloque--biografia">
+                <div class="novedades__contenido">
+                    <h3>#BIOGRAFÍAS</h3>
+                    <h4>EL REY KIPCHOGE</h4>
+                    <p>Ha sido el atleta que ha roto todas las barreras de los 42.195 metros, campeón olímpico, mundial, una leyenda viviente.</p>
+                    <a href="./runclub.html#runclubAccesoBiografias" class="btRun-sm">ver más</a>
+                </div>
+            </article>
         </section>
         <!-- FIN RUNCLUB -->
 
 
 
-        <section id="entrenaConNosotros" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="400">
-            <div class="grillaRunClub">
-                <div class="accesoConNosotros">
+        <section class="entrenaConNosotros bloqueContenido--xxl" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="300">
+            <span class="entrenaConNosotros__bloqueCentral">
+                <div class="accesoConNosotros__bloque1">
                     <img src="./images/foto-coach.png" alt="Nuestro coach - Entrená en RunClub">
                 </div>
-                <div class="accesoConNosotros">
+                <div class="accesoConNosotros__bloque2">
                     <h2 class="destacadoClub">ENTRENÁ CON NOSOTROS</h2>
-                    <p class="textoEncabezado">Run Club te brinda el asesoramiento, inspiración e innovación que necesitás para convertirte en un mejor atleta. Unite a nosotros para alcanzar tus objetivos y pasarla bien en el proceso.</p>
-                    <a href="./contacto.html" class="btRun-med">SUMATE</a>
+                    <p class="textosDestacados">Run Club te brinda el asesoramiento, inspiración e innovación que necesitás para convertirte en un mejor atleta y pasarla bien en el proceso.</p>
+                    <a href="./contacto.html" class="btRun-large">SUMATE</a>
                 </div>
-            </div>
+            </span>
         </section>
 
 
         <!-- CONTENIDO EVENTOS PRÓXIMOS -->
-        <section class="contenedorProximosEventos fondoGradient" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="500">
+        <section class="contenedorProximosEventos bloqueContenido--xxxl fondoGradient" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="300">
             <h2 class="contenedorProximoseventos__titulo">PRÓXIMOS EVENTOS</h2>
             <div class="contenedorProximosEventos__contenido">
                 <span class="contenedorProximosEventos__acceso"><img class="contenedorProximosEventos__imagen"src="./images/evento1.png" alt="Foto Evento 1"></span>
@@ -134,16 +129,16 @@
                 <span class="contenedorProximosEventos__acceso"><img class="contenedorProximosEventos__imagen"src="./images/evento3.png" alt="Foto Evento 3"></span>
                 <span class="contenedorProximosEventos__acceso"><img class="contenedorProximosEventos__imagen"src="./images/evento4.png" alt="Foto Evento 4"></span>
             </div>
-            <a href="./eventos.html" class="contenedorProximosEventos__boton btRun-large">VER MÁS</a>
+            <a href="./eventos.html" class="btRunDestacado-large">VER MÁS</a>
         </section>
         <!-- FIN CONTENIDO EVENTOS -->
 
 
         <!-- CONTENIDO EVENTOS ANTERIORES -->
-        <section class="contenedorEventos">
+        <section class="contenedorEventos bloqueContenido--xl">
             <h2 class="contenedorEventos__titulo destacadoClub">EVENTOS ANTERIORES</h2>
-            <p class="textoEncabezado">En RunClub contamos con un equipo de fotografos de carreras deportivas. Nuestro objetivo fue pensarlo y desarrollarlo para que los corredores de nuestro equipo se lleven los mejores recuerdos de cada una de las carreras en que participen.</p>
-            <div class="contenedorEventos__eventosAnteriores">
+            <p class="bloqueContenido--sm textosDestacados">En RunClub contamos con un equipo de fotografos de carreras deportivas. Nuestro objetivo fue pensarlo y desarrollarlo para que los corredores de nuestro equipo se lleven los mejores recuerdos de cada una de las carreras en que participen.</p>
+            <div class="contenedorEventos__eventosAnteriores bloqueContenido--lg">
                 <article class="contenedorEventos__bloqueEvento" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <a href="./galeria-evento.html">
                         <span class="contenedorEventos__bloqueContenido">
@@ -154,9 +149,9 @@
                 </article>
                 <article class="contenedorEventos__bloqueEvento" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <a href="./galeria-evento.html">
-                        <span class="contenedorEventos__bloqueContenido2">
+                        <span class="contenedorEventos__bloqueContenido">
                             <img class="contenedorEventos__imagenEvento" src="./images/evento_anterior2.png" alt="21k de Buenos Aires 2021">
-                            <h4 class="contenedorEventos__tituloEventoAnterior2">21k Buenos Aires 2021</h4>
+                            <h4 class="contenedorEventos__tituloEventoAnterior">21k Buenos Aires 2021</h4>
                         </span>
                     </a>
                 </article>
@@ -170,20 +165,20 @@
                 </article>
                 <article class="contenedorEventos__bloqueEvento" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <a href="./galeria-evento.html">
-                        <span class="contenedorEventos__bloqueContenido2">
+                        <span class="contenedorEventos__bloqueContenido">
                             <img class="contenedorEventos__imagenEvento" src="./images/evento_anterior4.png" alt="Maratón y media maratón de Rosario 2021">
-                            <h4 class="contenedorEventos__tituloEventoAnterior2">42k de Rosario 2021</h4>
+                            <h4 class="contenedorEventos__tituloEventoAnterior">42k de Rosario 2021</h4>
                         </span>
                     </a>
                 </article>
             </div>
-            <a href="./eventos.html" class="contenedorEventos__boton verMas">¡VER MÁS EVENTOS!</a>
+            <a href="./eventos.html" class="btRun-large">¡VER MÁS EVENTOS!</a>
         </section>
         <!-- FIN EVENTOS ANTERIORES -->
 
 
     </main>
-    <footer class="footer">
+    <footer class="bloqueContenido--xxxl footer">
         <div class="footer__contenido">
             <div class="footer__informacion">
                 <h3>run<span class="destacadoClub">Club</span></h3>

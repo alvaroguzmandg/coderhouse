@@ -1,0 +1,79 @@
+html {
+    @media only screen and (max-width: 900px) {
+        font-size: 11px;
+    }
+    @media only screen and (max-width:600px) {
+        font-size: 10px;
+    }
+}
+
+h1 {
+    color: $textoPrincipal;
+    font-weight: 700;
+    font-size: 6rem;
+    @media only screen and (max-width: 900px) {
+        font-size: 3rem;
+        line-height: 5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+h2 {
+    color: $colorRunClub;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 3rem;
+    @media only screen and (max-width: 300px) {
+        font-size: 2rem;
+    }
+}
+
+hr {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #666666;
+}
+
+.encabezadoDestacado {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.textosDestacados {
+    margin: 10px auto;
+    font-size: 1rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 300;
+    color: $textoPrincipal;
+    text-align: center;
+    @media only screen and (max-width: 992px) {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+}
+
+.destacadoClub {
+    color: $colorRunClub;
+}
+
+a.seguirLeyendo {
+    display: block;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: $textoPrincipal;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.fondoGradient {
+    background: rgb(50, 50, 50);
+    background: radial-gradient(circle, rgba(50, 50, 50, 1) 0%, rgba(16, 15, 15, 1) 84%, rgba(0, 0, 0, 1) 100%);
+}

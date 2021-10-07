@@ -1,0 +1,55 @@
+/*TAMAÑOS CONTENEDORES */
+
+.bloqueContenido--sm {
+    @include estructuraContenido(700px, auto)
+}
+
+.bloqueContenido--md {
+    @include estructuraContenido(900px, auto)
+}
+
+.bloqueContenido--lm {
+    @include estructuraContenido(990px, auto)
+}
+
+.bloqueContenido--lg {
+    @include estructuraContenido(1200px, auto)
+}
+
+.bloqueContenido--xl {
+    @include estructuraContenido(1366px, auto)
+}
+
+.bloqueContenido--xxl {
+    @include estructuraContenido(1920px, auto)
+}
+
+.bloqueContenido--xxxl {
+    @include estructuraContenido(100%, auto)
+}
+
+
+/* PORTADAS */
+
+.portada {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.portada__home {
+    background-image: url(../images/portadas/portada.png);
+    height: 600px;
+    h1 {
+        animation-duration: 4s;
+    }
+}

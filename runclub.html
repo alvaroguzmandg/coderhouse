@@ -14,14 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/newEstilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark contenidoSemiFull">
+        <nav class="navbar navbar-expand-lg navbar-dark bloqueContenido--lg">
             <div class="container-fluid">
                 <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +36,7 @@
 
 
                         <li class="nav-item">
-                            <a class="dropdown-toggle nav-run destacadoClub" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> RUNCLUB
+                            <a class="dropdown-toggle nav-run  destacadoClub" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> RUNCLUB
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark dropdown-run">
                                 <a class="nav-run-drop" href="./runclub.html">ZONA CORREDOR</a>
@@ -58,20 +56,19 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main>
         <!-- INICIO CONTENIDO INICIAL -->
         <section class="portada">
             <img src="./images/portadas/portada-runclub.png" alt="Imagen de portada sección runclub">
             <h1>ZONA <span class="destacadoClub">CORREDOR</span></h1>
-            <p class="textoEncabezado">Acá vas a enterarte de todas las novedades del mundo del running. Noticias, biografías, editoriales y entrenamientos para que no te pierdas de nada.</p>
+            <p class="textosDestacados bloqueContenido--sm">Acá vas a enterarte de todas las novedades del mundo del running. Noticias, biografías, editoriales y entrenamientos para que no te pierdas de nada.</p>
         </section>
         <!-- FIN CONTENIDO INICIAL -->
         <!-- SECCIÓN NOTICIAS -->
-        <section id="runclubAccesoNoticias">
+        <section class="noticiasRunClub bloqueContenido--xxl">
             <h2>NOTICIAS</h2>
-            <div class="grillaRunClub">
+            <div class="noticiasRunClub__bloque bloqueContenido--lm">
                 <article>
                     <img src="./images/noticia-1.png" alt="Noticia 1">
                     <h3 class="destacadoClub">ARBE Y MUÑOZ</h3>
@@ -85,7 +82,7 @@
                     <a href="./pagina-no-encontrada.html" class="seguirLeyendo"> seguir leyendo> </a>
                 </article>
                 <article>
-                    <img src="./images/evento4.png" alt="Noticia 1">
+                    <img src="./images/noticia-3.png" alt="Noticia 1">
                     <h3 class="destacadoClub">PASÓ ROSARIO</h3>
                     <p>Luego de sufrir suspensiones, se corrió la primer carrera masiva en Argentina. Casi 5 mil corredores divididos en las distancias de 21 y 42k disfrutaron de nuestra ciudad.</p>
                     <a href="./pagina-no-encontrada.html" class="seguirLeyendo"> seguir leyendo> </a>
@@ -94,9 +91,9 @@
         </section>
         <!-- FIN SECCIÓN NOTICIAS -->
         <!-- SECCIÓN EDITORIALES -->
-        <section id="runclubAccesoEditoriales">
+        <section class="editorialesRunClub bloqueContenido--xxl">
             <h2>EDITORIALES</h2>
-            <div class="grillaRunClub">
+            <div class="editorialesRunClub__bloque">
                 <article data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <img src="./images/editorial-1.png" width="300px" alt="Foto editorial 1">
                     <h3>TITAN DESERT</h3>
@@ -114,33 +111,33 @@
         <!-- FIN SECCIÓN EDITORIAL -->
 
         <!-- SECCIÓN BIOGRAFÍAS -->
-        <section id="runclubAccesoBiografias">
+        <section class="biografiasRunClub bloqueContenido--xxxl">
             <h2>BIOGRAFÍAS</h2>
-            <p class="textoEncabezado">Ellos son nuestros héroes, nuestros ejemplos de cada día. ¡Te invitamos a que los conozcas!</p>
-            <div class="grillaRunClub">
-                <article id="biografia1" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
-                    <div class="textoBiografia">
+            <p class="textosDestacados bloqueContenido--sm">Ellos son nuestros héroes, nuestros ejemplos de cada día. ¡Te invitamos a que los conozcas!</p>
+            <div class="biografiasRunClub__bloque">
+                <article class="biografiasRunClub__bio1" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
+                    <div class="biografiasRunClub__texto">
                         <h3>ELIUD <span class="destacadoClub">KIPCHOGE</span></h3>
-                        <p>Ha sido el atleta que ha roto todas las barreras de los 42km 195 metros, la desafiante distancia entre maratón y Atenas.</p>
+                        <p>El atleta que ha roto todas las barreras de los 42km 195 metros, la desafiante distancia entre maratón y Atenas.</p>
                         <a href="./pagina-no-encontrada.html" class="seguirLeyendo"> nota en desarrollo> </a>
                     </div>
                 </article>
-                <article id="biografia2" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1400">
-                    <div class="textoBiografia">
+                <article class="biografiasRunClub__bio2" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1400">
+                    <div class="biografiasRunClub__texto">
                         <h3>LUCAS <span class="destacadoClub">BAEZ</span></h3>
                         <p>De un joven con sobrepeso a un atleta de nivel internacional con marcas al nivel de nuestros mejores fondistas.</p>
                         <a href="./pagina-no-encontrada.html" class="seguirLeyendo"> nota en desarrollo> </a>
                     </div>
                 </article>
-                <article id="biografia3" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1800">
-                    <div class="textoBiografia">
+                <article class="biografiasRunClub__bio3" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1800">
+                    <div class="biografiasRunClub__texto">
                         <h3>MARCELO <span class="destacadoClub">PEROTTI</span></h3>
                         <p>El entrenador por excelencia del Running amateur. Especialista en entrenamiento de running, trail running y Ultratrail.</p>
                         <a href="./pagina-no-encontrada.html" class="seguirLeyendo"> nota en desarrollo> </a>
                     </div>
                 </article>
-                <article id="biografia4" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="2200">
-                    <div class="textoBiografia">
+                <article class="biografiasRunClub__bio4" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="2200">
+                    <div class="biografiasRunClub__texto">
                         <h3>SANTIAGO <span class="destacadoClub">GARCÍA</span></h3>
                         <p>Crítico de cine, periodista, corredor y maratonista. La historia de un hombre que vive para correr y corre para vivir.</p>
                         <a href="./pagina-no-encontrada.html" class="seguirLeyendo"> nota en desarrollo> </a>
@@ -152,37 +149,38 @@
 
 
         <!-- SECCIÓN ENTRENAMIENTOS -->
-        <section id=runclubAccesoEntrenamientos>
+        <section class="entrenamientosRunClub bloqueContenido--xxxl">
             <h2>NUESTROS ENTRENAMIENTOS</h2>
-            <div class="grillaRunClub">
+            <div class="entrenamientosRunClub__bloque">
                 <article data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <img src="./images/entrenamiento-1.png" alt="Foto entrenamiento 1">
-                    <h3 class="tituloEntrenamientos">PASADAS CORTAS</h3>
+                    <h3>PASADAS CORTAS</h3>
                     <p>Las pasadas cortas son el entrenamiento más importante para mejorar la potencia</p>
                 </article>
                 <article data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <img src="./images/entrenamiento-2.png" alt="Foto entrenamiento 2">
-                    <h3 class="tituloEntrenamientos">PASADAS LARGAS</h3>
+                    <h3>PASADAS LARGAS</h3>
                     <p>El equilibrio entre la comodidad y la incomodidad, la búsqueda del umbral perfecto</p>
                 </article>
                 <article data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <img src="./images/entrenamiento-3.png" alt="Foto entrenamiento 3">
-                    <h3 class="tituloEntrenamientos">CUESTAS EN RECOLETA</h3>
+                    <h3>CUESTAS EN RECOLETA</h3>
                     <p>El mejor trabajo de fuerza en un circuito super variado, lleno de aventuras y super divertido</p>
                 </article>
                 <article data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="1000">
                     <img src="./images/entrenamiento-4.png" alt="Foto entrenamiento 3">
-                    <h3 class="tituloEntrenamientos">CAMBIOS DE RITMO</h3>
+                    <h3>CAMBIOS DE RITMO</h3>
                     <p>Cuando el corredor se acostumbra, llega el momento de hacer un ajuste divertido</p>
                 </article>
             </div>
+            <a href="./contacto.html" class="btRunDestacado-large">¡ENTRENÁ CON NOSOTROS!</a>
         </section>
         <!-- FIN SECCIÓN ENTRENAMIENTOS -->
 
 
 
     </main>
-    <footer class="footer">
+    <footer class="bloqueContenido--xxxl footer">
         <div class="footer__contenido">
             <div class="footer__informacion">
                 <h3>run<span class="destacadoClub">Club</span></h3>

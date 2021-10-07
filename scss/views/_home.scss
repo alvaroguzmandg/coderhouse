@@ -1,0 +1,270 @@
+/* SECCION NOVEDADES */
+
+.novedades {
+    display: flex;
+    gap: 0px;
+    align-items: stretch;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    article.novedades__bloque {
+        box-sizing: border-box;
+        height: 600px;
+        text-align: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        .novedades__contenido {
+            width: 90%;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 1rem;
+                font-weight: 300;
+            }
+            h4 {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1.4rem;
+                line-height: 3rem;
+                font-weight: 300;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                height: 130px;
+            }
+        }
+    }
+    .novedades__bloque--noticia {
+        background-image: url(../images/novedad-noticia.png);
+    }
+    .novedades__bloque--editorial {
+        background-image: url(../images/novedad-editorial.png);
+    }
+    .novedades__bloque--entrenamiento {
+        background-image: url(../images/novedad-entrenamiento.png);
+    }
+    .novedades__bloque--biografia {
+        background-image: url(../images/novedad-biografia.png);
+    }
+    @media only screen and (max-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        article.novedades__bloque {
+            grid-column-end: span 6;
+            .novedades__contenido {
+                width: 80%;
+                h4 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        article.novedades__bloque {
+            grid-column-end: span 12;
+            .novedades__contenido {
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    margin: 50px auto;
+                    font-size: 2rem;
+                    line-height: 4rem;
+                }
+            }
+        }
+    }
+}
+
+
+/* SECCIÓN ENTRENA CON NOSOTROS */
+
+.entrenaConNosotros {
+    margin: 80px auto;
+    text-align: center;
+    h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        word-spacing: 10px;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        font-weight: 300;
+        color: $textoPrincipal;
+        text-align: center;
+    }
+    .entrenaConNosotros__bloqueCentral {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+    .accesoConNosotros__bloque {
+        grid-column-end: span 1;
+        img {
+            width: 100%;
+        }
+    }
+    .accesoConNosotros__bloque2 {
+        grid-column-end: span 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 900px) {
+        .entrenaConNosotros__bloqueCentral {
+            grid-template-columns: 1fr;
+        }
+        h2 {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+        p {
+            width: 90%;
+            max-width: 600px;
+            font-size: 1.6rem;
+            line-height: 3rem;
+        }
+    }
+}
+
+
+/* SECCIÓN PRÓXIMOS EVENTOS */
+
+.contenedorProximosEventos {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    .contenedorProximosEventos__contenido {
+        width: 80%;
+        margin: 20px auto 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    h2 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #ffffff;
+        line-height: 3rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .contenedorProximosEventos__acceso {
+        text-align: center;
+        background-color: $colorRunClub;
+    }
+    .contenedorProximosEventos__imagen {
+        width: 100%;
+        height: 100%;
+    }
+    .contenedorProximosEventos__imagen:hover {
+        transform: scale(0.95);
+        transition: 1s;
+    }
+    @media only screen and (max-width:600px) {
+        h2 {
+            margin: 0 auto;
+            font-size: 2rem;
+            line-height: 3rem;
+            letter-spacing: 5px;
+        }
+        .contenedorProximosEventos__contenido {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px
+        }
+        .contenedorProximosEventos__acceso {
+            width: 100%;
+            display: block;
+            grid-column-end: span 2;
+        }
+    }
+}
+
+
+/* SECCIÓN EVENTOS ANTERIORES */
+
+section.contenedorEventos {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        padding-bottom: 10px;
+    }
+    .contenedorEventos__eventosAnteriores {
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        row-gap: 30px;
+    }
+    .contenedorEventos__bloqueContenido {
+        background-color: $fondoPrincipal;
+        display: block;
+        transition: 2s;
+        padding-top: 3%;
+        margin: 0 auto;
+        text-align: center;
+        &:hover {
+            transform: scale(1.05);
+            background-color: $colorRunClub;
+        }
+    }
+    .contenedorEventos__imagenEvento {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .contenedorEventos__tituloEventoAnterior {
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: #ffffff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+    @media only screen and (max-width: 992px) {
+        width: 90%;
+        .contenedorEventos__eventosAnteriores {
+            gap: 15px;
+        }
+    }
+    @media only screen and (max-width:600px) {
+        h2 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+        .contenedorEventos__eventosAnteriores {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .contenedorEventos__bloqueEvento {
+            width: 100%;
+            display: block;
+            grid-column-end: span 2;
+        }
+    }
+    @media only screen and (max-width:400px) {
+        .contenedorEventos__eventosAnteriores {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

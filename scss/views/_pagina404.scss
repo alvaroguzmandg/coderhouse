@@ -1,0 +1,64 @@
+.portada__noEncontrado {
+    padding-top: 30px;
+    h1 {
+        @media only screen and (max-width: 900px) {
+            font-size: 3rem;
+        }
+    }
+}
+
+section.noEncontrado {
+    margin: 20px auto;
+    .noEncontrado__bloque {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .noEncontrado__contenido {
+        grid-column-end: span 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: 900px) {
+            &:first-child {
+                grid-column-start: 2;
+                grid-column-end: span 4;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            grid-column-end: span 12;
+            &:first-child {
+                grid-column-start: 1;
+                grid-column-end: span 12;
+            }
+        }
+    }
+    img {
+        &.noEncontrado__imagen {
+            width: 80%;
+            @media only screen and (max-width: 600px) {
+                width: 50%;
+            }
+        }
+        &.noEncontrado__error {
+            width: 80px;
+            margin-bottom: 20px;
+            @media only screen and (max-width: 600px) {
+                margin-top: 10px;
+                width: 40px;
+            }
+        }
+    }
+    h3 {
+        color: $colorRunClub;
+    }
+    p {
+        width: 90%;
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+        text-align: center;
+        @media only screen and (max-width: 600px) {
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,267 @@
+.noticiasRunClub {
+    margin: 50px auto;
+    padding-top: 30px;
+    background-color: #efefef;
+    h2 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+    .noticiasRunClub__bloque {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+        }
+        article {
+            grid-column-end: span 4;
+            text-align: center;
+            padding: 3%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            &:hover {
+                background-color: $fondoPrincipal;
+                color: white;
+                a {
+                    color: $colorRunClub;
+                }
+            }
+            img {
+                max-width: 100%;
+                object-fit: contain;
+            }
+            h3 {
+                font-size: 1.8rem;
+                padding: 10px 0px;
+                font-weight: 900;
+                @media only screen and (max-width: 800px) {
+                    margin-bottom: 0px;
+                }
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 2rem;
+                letter-spacing: 0.1px;
+                text-align: center;
+                @media only screen and (max-width: 800px) {
+                    display: none;
+                }
+                @media only screen and (max-width: 600px) {
+                    display: block;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.editorialesRunClub {
+    margin: 50px auto;
+    background-color: $fondoPrincipal;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h2 {
+        color: rgba(255, 255, 255, 0.1);
+        margin-top: 10px;
+        font-size: 13rem;
+        line-height: 1rem;
+        @media only screen and (max-width: 990px) {
+            font-size: 8rem;
+        }
+        @media only screen and (max-width: 900px) {
+            font-size: 4rem;
+            letter-spacing: 0rem;
+        }
+        @media only screen and (max-width: 300px) {
+            font-size: 3rem;
+            letter-spacing: 0rem;
+        }
+    }
+    .editorialesRunClub__bloque {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px
+    }
+    article {
+        grid-column-end: span 6;
+        text-align: center;
+        padding-top: 50px;
+        @media only screen and (max-width: 990px) {
+            grid-column-end: span 12;
+        }
+    }
+    img {
+        width: 90%;
+        text-align: center;
+    }
+    h3 {
+        color: rgba(255, 255, 255, 0.8);
+        padding-top: 10px;
+        font-size: 2rem;
+        font-weight: 900;
+        letter-spacing: 3px;
+    }
+    p {
+        width: 70%;
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        color: white;
+        @media only screen and (max-width: 990px) {
+            font-size: 1.4rem;
+            line-height: 3rem;
+            width: 80%;
+        }
+    }
+    .seguirLeyendo {
+        color: $colorRunClub;
+    }
+}
+
+.biografiasRunClub {
+    margin: 80px auto;
+    .biografiasRunClub__bloque {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    article {
+        color: white;
+        text-align: center;
+        background-size: cover;
+        grid-column-end: span 3;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        background-position: center;
+        margin-top: 10px;
+        @media only screen and (max-width: 992px) {
+            grid-column-end: span 6;
+            margin-top: 0px;
+        }
+        @media only screen and (max-width: 600px) {
+            grid-column-end: span 12;
+        }
+        .biografiasRunClub__texto {
+            width: 70%;
+            margin: 0px auto;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3 {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                margin-bottom: 30px;
+                .destacadoClub {
+                    display: block;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    line-height: 3rem;
+                }
+                @media only screen and (max-width: 992px) {
+                    font-size: 2rem;
+                    .destacadoClub {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+        a {
+            color: white;
+            &:hover {
+                color: $colorRunClub;
+            }
+        }
+        p {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+    }
+    .biografiasRunClub__bio1 {
+        background-image: url(../images/biografias/bio-eliud.png);
+    }
+    .biografiasRunClub__bio2 {
+        background-image: url(../images/biografias/bio-lucas.png);
+    }
+    .biografiasRunClub__bio3 {
+        background-image: url(../images/biografias/bio-perotti.png);
+    }
+    .biografiasRunClub__bio4 {
+        background-image: url(../images/biografias/bio-garcia.png);
+    }
+}
+
+.entrenamientosRunClub {
+    margin: 50px auto;
+    background-color: $fondoPrincipal;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        @media only screen and (max-width: 992px) {
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+    }
+    .entrenamientosRunClub__bloque {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        padding-top: 20px;
+        @media only screen and (max-width: 992px) {
+            max-width: 800px;
+        }
+    }
+    article {
+        grid-column-end: span 3;
+        margin: 20px auto;
+        text-align: center;
+        @media only screen and (max-width: 992px) {
+            grid-column-end: span 6;
+        }
+        @media only screen and (max-width: 600px) {
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: $colorRunClub;
+            font-weight: 600;
+            padding-top: 10px;
+            @media only screen and (max-width: 600px) {
+                color: #ffffff;
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: 300;
+            @media only screen and (max-width: 992px) {
+                font-size: 1.5rem;
+            }
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+}

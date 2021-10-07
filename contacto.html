@@ -13,16 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/newEstilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark contenidoSemiFull">
+        <nav class="navbar navbar-expand-lg navbar-dark bloqueContenido--lg">
             <div class="container-fluid">
-                <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo RunClub"></a>
+                <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,57 +49,53 @@
                             <a class="nav-run" href="./eventos.html">EVENTOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-run destacadoClub" href="./contacto.html">CONTACTO</a>
+                            <a class="nav-run  destacadoClub" href="./contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
+
     <main>
         <!-- INICIO CONTENIDO INICIAL -->
         <section class="portada">
             <img src="./images/portadas/portada-contacto.png" alt="Imagen de portada contacto">
-            <h1>ENTRENÁ CON <span class="destacadoClub">NOSOTROS</span></h1>
-            <p class="textoEncabezado">Nunca es fácil probar algo nuevo. Pero es excelente. Porque no importa cuántas veces te caigas, siempre ganas algo. Probar cosas nuevas siempre es una victoria.
-            </p>
-
-
+            <div class="encabezadoDestacado bloqueContenido--lg">
+                <h1>ENTRENÁ CON <span class="destacadoClub">NOSOTROS</span></h1>
+                <p class="textosDestacados bloqueContenido--sm">Nunca es fácil probar algo nuevo. Pero es excelente. Porque no importa cuántas veces te caigas, siempre ganas algo. Probar cosas nuevas siempre es una victoria.
+                </p>
+            </div>
         </section>
         <!-- FIN CONTENIDO INICIAL -->
 
 
 
-        <section id="entrenaConNosotros" class="formularioContacto" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="500">
-            <div class="grillaRunClub">
-                <div class="accesoConNosotros">
-                    <img src="./images/contactoRunClub.png" alt="Sumate a RunClub">
+        <section class="entrenaContacto bloqueContenido--lg" data-aos="fade-in" data-aos-easing="ease-in" data-aos-delay="300">
+            <span class="entrenaContacto__bloqueCentral">
+                <div class="accesoConNosotros__bloque1">
+                    <img src="./images/contactoRunClub.png" alt="Nuestro coach - Entrená en RunClub">
                 </div>
-                <div class="accesoConNosotros datosContacto">
-                    <div class="tituloContacto">
-                        <h3>HACETE MIEMBRO <span class="destacadoClub">DE RUNCLUB</span></h3>
-
+                <div class="entrenaContacto__bloque2">
+                    
+                <!-- FORMULARIO DE REGISTRO -->
+                <form action="" method="GET">
+                    <h3>HACETE MIEMBRO DE RUNCLUB</h3>
+                    <div class="entrenaContacto_campo">
+                        <input type="text" placeholder="Dirección de correo electrónico" name="email" id="mail">
                     </div>
-                    <!-- FORMULARIO DE REGISTRO -->
-                    <form action="" method="GET">
-                        <div>
-                            <input type="text" placeholder="Dirección de correo electrónico" name="email" id="mail">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Nombre" name="nombre" id="name">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Apellido" name="apellido" id="name">
-                        </div>
-
-
-                        <input class="botonEnviar verMas" type="submit" value="Enviar Registro">
-                        <input class="botonLimpiar" type="reset" value="Limpiar datos">
-                    </form>
-                    <!-- FIN FORMULARIO REGISTRO -->
-                </div>
+                    <div class="entrenaContacto_campo">
+                        <input type="text" placeholder="Nombre" name="nombre" id="name">
+                    </div>
+                    <div class="entrenaContacto_campo">
+                        <input type="text" placeholder="Apellido" name="apellido" id="name">
+                    </div>
+                    <input class="btRun-med botonEnviar" type="submit" value="Enviar Registro">
+                    <input class="botonLimpiar" type="reset" value="Limpiar datos">
+                </form>
+                <!-- FIN FORMULARIO REGISTRO -->
             </div>
+            </span>
         </section>
 
 
