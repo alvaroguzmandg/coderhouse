@@ -208,7 +208,8 @@ hr {
   text-align: center; }
   @media only screen and (max-width: 992px) {
     .textosDestacados {
-      width: 90%; } }
+      width: 90%;
+      font-size: 1.4rem; } }
 
 .destacadoClub {
   color: #FF5500; }
@@ -502,36 +503,57 @@ section.contenedorEventos {
   margin: 50px auto;
   text-align: center; }
   .staff .staff__contenido {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     margin: 0 auto; }
+    @media only screen and (max-width: 1200px) {
+      .staff .staff__contenido {
+        width: 90%; } }
   .staff h2 {
     padding-top: 20px;
     font-size: 12rem;
     line-height: 40px;
-    color: rgba(255, 85, 0, 0.2); }
-  .staff h3 {
-    color: white;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    padding-bottom: 10px;
-    letter-spacing: 1px; }
-    .staff h3 .destacadoClub {
-      font-size: 1.8rem; }
-  .staff p {
-    color: white;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.2px; }
+    color: rgba(255, 85, 0, 0.2);
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (max-width: 900px) {
+      .staff h2 {
+        font-size: 8rem; } }
   .staff .staff_miembroStaff {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 20px 10px;
     grid-column-end: span 3; }
+    @media only screen and (max-width: 900px) {
+      .staff .staff_miembroStaff {
+        grid-column-end: span 6; } }
+    @media only screen and (max-width: 600px) {
+      .staff .staff_miembroStaff {
+        grid-column-end: span 12; } }
     .staff .staff_miembroStaff img {
       width: 100%; }
+    .staff .staff_miembroStaff h3 {
+      color: white;
+      font-size: 1.7rem;
+      line-height: 2rem;
+      padding-bottom: 10px;
+      letter-spacing: 1px; }
+      .staff .staff_miembroStaff h3 .destacadoClub {
+        font-weight: 700; }
     .staff .staff_miembroStaff p {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 2.3rem;
+      letter-spacing: 0.2px;
       padding: 10px; }
+      @media only screen and (max-width: 900px) {
+        .staff .staff_miembroStaff p {
+          padding-top: 30px; } }
+      @media only screen and (max-width: 600px) {
+        .staff .staff_miembroStaff p {
+          line-height: 3rem; } }
 
 .grillaFotos {
   padding-top: 30px;

@@ -4,30 +4,24 @@
         margin: 50px auto;
         text-align: center;
         .staff__contenido {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
             margin: 0 auto;
+            @media only screen and (max-width: 1200px) {
+                width: 90%;
+            }
         }
         h2 {
             padding-top: 20px;
             font-size: 12rem;
             line-height: 40px;
             color: rgba(255, 85, 0, 0.2);
-        }
-        h3 {
-            color: white;
-            font-size: 1.8rem;
-            line-height: 2rem;
-            padding-bottom: 10px;
-            letter-spacing: 1px;
-            .destacadoClub {
-                font-size: 1.8rem;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            @media only screen and (max-width: 900px) {
+                font-size: 8rem;
             }
-        }
-        p {
-            color: white;
-            font-size: 1.4rem;
-            line-height: 2.4rem;
-            letter-spacing: 0.2px;
         }
         .staff_miembroStaff {
             display: flex;
@@ -35,11 +29,37 @@
             justify-content: flex-start;
             padding: 20px 10px;
             grid-column-end: span 3;
+            @media only screen and (max-width: 900px) {
+                grid-column-end: span 6;
+            }
+            @media only screen and (max-width: 600px) {
+                grid-column-end: span 12;
+            }
             img {
                 width: 100%;
             }
+            h3 {
+                color: white;
+                font-size: 1.7rem;
+                line-height: 2rem;
+                padding-bottom: 10px;
+                letter-spacing: 1px;
+                .destacadoClub {
+                    font-weight: 700;
+                }
+            }
             p {
+                color: white;
+                font-size: 1.3rem;
+                line-height: 2.3rem;
+                letter-spacing: 0.2px;
                 padding: 10px;
+                @media only screen and (max-width: 900px) {
+                    padding-top: 30px;
+                }
+                @media only screen and (max-width: 600px) {
+                    line-height: 3rem;
+                }
             }
         }
     }
