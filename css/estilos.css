@@ -173,7 +173,7 @@ h1 {
   font-size: 6rem; }
   @media only screen and (max-width: 900px) {
     h1 {
-      font-size: 5rem;
+      font-size: 3rem;
       line-height: 5rem;
       width: 90%;
       margin: 0 auto; } }
@@ -851,10 +851,13 @@ section.galeriaEventos {
   margin-bottom: 50px; }
 
 .portada__noEncontrado {
-  padding-top: 50px; }
+  padding-top: 30px; }
+  @media only screen and (max-width: 900px) {
+    .portada__noEncontrado h1 {
+      font-size: 3rem; } }
 
 section.noEncontrado {
-  margin: 30px auto; }
+  margin: 20px auto; }
   section.noEncontrado .noEncontrado__bloque {
     display: grid;
     grid-template-columns: repeat(12, 1fr); }
@@ -864,11 +867,28 @@ section.noEncontrado {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 900px) {
+      section.noEncontrado .noEncontrado__contenido:first-child {
+        grid-column-start: 2;
+        grid-column-end: span 4; } }
+    @media only screen and (max-width: 600px) {
+      section.noEncontrado .noEncontrado__contenido {
+        grid-column-end: span 12; }
+        section.noEncontrado .noEncontrado__contenido:first-child {
+          grid-column-start: 1;
+          grid-column-end: span 12; } }
   section.noEncontrado img.noEncontrado__imagen {
     width: 80%; }
+    @media only screen and (max-width: 600px) {
+      section.noEncontrado img.noEncontrado__imagen {
+        width: 50%; } }
   section.noEncontrado img.noEncontrado__error {
     width: 80px;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 600px) {
+      section.noEncontrado img.noEncontrado__error {
+        margin-top: 10px;
+        width: 40px; } }
   section.noEncontrado h3 {
     color: #FF5500; }
   section.noEncontrado p {
@@ -876,6 +896,9 @@ section.noEncontrado {
     font-size: 1.4rem;
     margin-bottom: 30px;
     text-align: center; }
+    @media only screen and (max-width: 600px) {
+      section.noEncontrado p {
+        width: 80%; } }
 
 .btRun-sm {
   color: white;
