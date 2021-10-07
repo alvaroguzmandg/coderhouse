@@ -1,38 +1,3 @@
-/* ESTILOS GENÉRICOS SITIO */
-
-.verMas {
-    margin: 0 auto;
-    display: block;
-    background-color: #050505;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    text-align: center;
-    letter-spacing: 1px;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 200px;
-}
-
-.verMas:hover {
-    background-color: #ff5500;
-    color: #ffffff;
-}
-
-.grillaRunClub {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-}
-
-
-/* GALERIA EVENTOS */
-
-.carousel-inner {
-    margin-bottom: 50px;
-}
-
-
 /* ESTILOS PÁGINA 404 */
 
 .portada__noEncontrado {

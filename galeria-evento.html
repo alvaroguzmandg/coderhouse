@@ -12,14 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/newEstilos.css">
 </head>
 
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark contenidoSemiFull">
+        <nav class="navbar navbar-expand-lg navbar-dark bloqueContenido--xl">
             <div class="container-fluid">
                 <a class="navbar-brand logoSitio" href="./index.html"><img src="./images/logo-runclub.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +34,7 @@
 
 
                         <li class="nav-item">
-                            <a class="dropdown-toggle nav-run " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> RUNCLUB
+                            <a class="dropdown-toggle nav-run  destacadoClub" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> RUNCLUB
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark dropdown-run">
                                 <a class="nav-run-drop" href="./runclub.html">ZONA CORREDOR</a>
@@ -47,7 +45,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-run destacadoClub" href="./eventos.html">EVENTOS</a>
+                            <a class="nav-run" href="./eventos.html">EVENTOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-run" href="./contacto.html">CONTACTO</a>
@@ -56,21 +54,20 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <main>
         <!-- INICIO CONTENIDO INICIAL -->
         <section class="portada container-fluid">
             <img src="./images/portadas/portada-eventos.png" alt="Imagen de portada sección eventos">
             <h1>21K <span class="destacadoClub">DE BUENOS AIRES</span></h1>
-            <p class="textoEncabezado">¡El 10 de octubre se corrieron los 21k de Buenos Aires y tuvimos una amplia participación de nuestros atletas! Acá te dejamos una galería con las fotos más destacadas para que puedas disfrutarlas y revivir esta gran experiencia que vivimos
+            <p class="textosDestacados bloqueContenido--sm">¡El 10 de octubre se corrieron los 21k de Buenos Aires y tuvimos una amplia participación de nuestros atletas! Acá te dejamos una galería con las fotos más destacadas para que puedas disfrutarlas y revivir esta gran experiencia que vivimos
                 el domingo.</p>
         </section>
         <!-- FIN CONTENIDO INICIAL -->
 
 
 
-        <section class="container container-sm espaciadorSuperiorInferior">
+        <section class="bloqueContenido--lm galeriaEventos">
             <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2000">
@@ -119,12 +116,12 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-            <a href="./eventos.html#accesoEventos" class="verMas">¡VER MÁS EVENTOS!</a>
+            <a href="./eventos.html" class="btRun-large">VER MÁS EVENTOS</a>
         </section>
 
 
     </main>
-    <footer class="footer">
+    <footer class="bloqueContenido--xxxl footer">
         <div class="footer__contenido">
             <div class="footer__informacion">
                 <h3>run<span class="destacadoClub">Club</span></h3>

@@ -647,6 +647,14 @@ form {
       font-weight: 600;
       padding-top: 10px; }
 
+section.galeriaEventos {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column; }
+
+.carousel-inner {
+  margin-bottom: 50px; }
+
 .btRun-sm {
   color: white;
   background-color: #232323;
