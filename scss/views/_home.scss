@@ -7,38 +7,37 @@
     justify-content: center;
     background-color: black;
     color: white;
-    article {
-        grid-column-end: span 3;
+    article.novedades__bloque {
         box-sizing: border-box;
         height: 600px;
         text-align: center;
         background-size: cover;
         display: flex;
-        align-items: center
-    }
-    h3 {
-        font-size: 1rem;
-        font-weight: 300;
-    }
-    h4 {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-    p {
-        font-size: 1.4rem;
-        line-height: 3rem;
-        font-weight: 300;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        height: 130px;
-    }
-    .novedades__contenido {
-        width: 90%;
-        display: flex;
-        margin: 0 auto;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        .novedades__contenido {
+            width: 90%;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-size: 1rem;
+                font-weight: 300;
+            }
+            h4 {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1.4rem;
+                line-height: 3rem;
+                font-weight: 300;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                height: 130px;
+            }
+        }
     }
     .novedades__bloque--noticia {
         background-image: url(../images/novedad-noticia.png);
@@ -51,6 +50,22 @@
     }
     .novedades__bloque--biografia {
         background-image: url(../images/novedad-biografia.png);
+    }
+    @media only screen and (max-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        article.novedades__bloque {
+            grid-column-end: span 6;
+            .novedades__contenido {
+                width: 80%;
+                h4 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
     }
 }
 
@@ -190,5 +205,11 @@ section.contenedorEventos {
     }
     .contenedorEventos__bloqueContenido:hover {
         transform: scale(1.05);
+    }
+    @media only screen and (max-width: 992px) {
+        width: 90%;
+        .contenedorEventos__eventosAnteriores {
+            gap: 15px;
+        }
     }
 }

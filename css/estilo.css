@@ -1,8 +1,4 @@
 @media only screen and (max-width:992px) {
-    /* ESTILOS GENÉRICOS */
-    html {
-        font-size: 11px;
-    }
     #contenedorMenu {
         width: 90%;
     }

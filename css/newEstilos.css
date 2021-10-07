@@ -133,6 +133,10 @@ header {
   .portada__home h1 {
     animation-duration: 4s; }
 
+@media only screen and (max-width: 900px) {
+  html html {
+    font-size: 11px; } }
+
 h1 {
   color: #232323;
   font-weight: 700;
@@ -191,34 +195,33 @@ a.seguirLeyendo {
   justify-content: center;
   background-color: black;
   color: white; }
-  .novedades article {
-    grid-column-end: span 3;
+  .novedades article.novedades__bloque {
     box-sizing: border-box;
     height: 600px;
     text-align: center;
     background-size: cover;
     display: flex;
     align-items: center; }
-  .novedades h3 {
-    font-size: 1rem;
-    font-weight: 300; }
-  .novedades h4 {
-    font-size: 1.8rem;
-    font-weight: 700; }
-  .novedades p {
-    font-size: 1.4rem;
-    line-height: 3rem;
-    font-weight: 300;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    height: 130px; }
-  .novedades .novedades__contenido {
-    width: 90%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    .novedades article.novedades__bloque .novedades__contenido {
+      width: 90%;
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .novedades article.novedades__bloque .novedades__contenido h3 {
+        font-size: 1rem;
+        font-weight: 300; }
+      .novedades article.novedades__bloque .novedades__contenido h4 {
+        font-size: 1.8rem;
+        font-weight: 700; }
+      .novedades article.novedades__bloque .novedades__contenido p {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        height: 130px; }
   .novedades .novedades__bloque--noticia {
     background-image: url(../images/novedad-noticia.png); }
   .novedades .novedades__bloque--editorial {
@@ -227,6 +230,18 @@ a.seguirLeyendo {
     background-image: url(../images/novedad-entrenamiento.png); }
   .novedades .novedades__bloque--biografia {
     background-image: url(../images/novedad-biografia.png); }
+  @media only screen and (max-width: 992px) {
+    .novedades {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr); }
+      .novedades article.novedades__bloque {
+        grid-column-end: span 6; }
+        .novedades article.novedades__bloque .novedades__contenido {
+          width: 80%; }
+          .novedades article.novedades__bloque .novedades__contenido h4 {
+            font-size: 3rem; }
+          .novedades article.novedades__bloque .novedades__contenido p {
+            font-size: 1.8rem; } }
 
 /* SECCIÓN ENTRENA CON NOSOTROS */
 .entrenaConNosotros {
@@ -336,6 +351,11 @@ section.contenedorEventos {
     text-transform: uppercase; }
   section.contenedorEventos .contenedorEventos__bloqueContenido:hover {
     transform: scale(1.05); }
+  @media only screen and (max-width: 992px) {
+    section.contenedorEventos {
+      width: 90%; }
+      section.contenedorEventos .contenedorEventos__eventosAnteriores {
+        gap: 15px; } }
 
 .entrenaContacto {
   margin: 40px auto;
