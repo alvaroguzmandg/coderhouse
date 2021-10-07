@@ -44,6 +44,8 @@ header {
   background-color: #232323;
   clear: both;
   top: 0px; }
+  header nav {
+    margin: 0 auto; }
   header .logoSitio img {
     width: 130px; }
 
