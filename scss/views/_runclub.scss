@@ -88,3 +88,97 @@
         color: $colorRunClub;
     }
 }
+
+.biografiasRunClub {
+    margin: 80px auto;
+    .biografiasRunClub__bloque {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    article {
+        color: white;
+        text-align: center;
+        background-size: cover;
+        grid-column-end: span 3;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        background-position: center;
+        margin-top: 10px;
+        .biografiasRunClub__texto {
+            width: 70%;
+            margin: 0px auto;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3 {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                margin-bottom: 30px;
+                .destacadoClub {
+                    display: block;
+                    font-size: 3rem;
+                }
+            }
+        }
+        a {
+            color: white;
+            &:hover {
+                color: $colorRunClub;
+            }
+        }
+        p {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+    }
+    .biografiasRunClub__bio1 {
+        background-image: url(../images/biografias/bio-eliud.png);
+    }
+    .biografiasRunClub__bio2 {
+        background-image: url(../images/biografias/bio-lucas.png);
+    }
+    .biografiasRunClub__bio3 {
+        background-image: url(../images/biografias/bio-perotti.png);
+    }
+    .biografiasRunClub__bio4 {
+        background-image: url(../images/biografias/bio-garcia.png);
+    }
+}
+
+.entrenamientosRunClub {
+    margin: 50px auto;
+    background-color: $fondoPrincipal;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    .entrenamientosRunClub__bloque {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+    }
+    article {
+        grid-column-end: span 3;
+        margin: 20px auto;
+        text-align: center;
+        img {
+            width: 100%;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        h3 {
+            color: $colorRunClub;
+            font-weight: 600;
+            padding-top: 10px;
+        }
+    }
+}
