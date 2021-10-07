@@ -4,6 +4,9 @@
         background-color: $colorRunClub;
         color: #ffffff;
     }
+    @media only screen and (max-width: 300px) {
+        width: 100%;
+    }
 }
 
 .btRun-med {
@@ -11,6 +14,9 @@
     &:hover {
         background-color: $colorRunClub;
         color: #ffffff;
+    }
+    @media only screen and (max-width: 300px) {
+        width: 100%;
     }
 }
 
@@ -20,6 +26,9 @@
         background-color: $colorRunClub;
         color: #ffffff;
     }
+    @media only screen and (max-width: 300px) {
+        width: 100%;
+    }
 }
 
 .btRunDestacado-large {
@@ -27,5 +36,8 @@
     &:hover {
         color: $colorRunClub;
         background-color: #ffffff;
+    }
+    @media only screen and (max-width: 300px) {
+        width: 100%;
     }
 }
