@@ -48,59 +48,40 @@ header {
     margin: 0 auto; }
   header .logoSitio img {
     width: 130px; }
-
-.navbar-expand-lg .navbar-collapse {
-  justify-content: flex-end; }
-
-.navbar-dark-color {
-  color: red; }
-
-a.nav-run:hover {
-  color: #FF5500; }
-
-a.nav-run-drop,
-a.nav-run-drop:hover {
-  color: #fff; }
-
-.nav-run {
-  display: inline-block;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem; }
-
-.nav-run-drop {
-  font-size: 1rem;
-  line-height: 1.2rem;
-  letter-spacing: 0.5px;
-  text-decoration: none;
-  display: block;
-  padding: 8px;
-  text-align: left; }
-
-nav ul li li:hover,
-nav ul li ul a:hover {
-  background-color: #FF5500;
-  color: white; }
-
-ul.dropdown-menu.dropdown-menu-dark.dropdown-run.show {
-  top: auto;
-  left: auto; }
-
-.dropdown-menu-dark {
-  background-color: #232323; }
-
-.dropdown-menu {
-  border-radius: 0;
-  border: 0;
-  padding: 0; }
-
-#navMobile {
-  display: none; }
-
-.destBoton:hover {
-  transform: scale(1.1);
-  transition: 0.1s; }
+  header .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+  header .navbar-expand-lg .container-fluid a.nav-run:hover {
+    color: #FF5500; }
+  header .navbar-expand-lg .container-fluid a.nav-run-drop,
+  header .navbar-expand-lg .container-fluid a.nav-run-drop:hover {
+    color: #fff; }
+  header .navbar-expand-lg .container-fluid .nav-run {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; }
+  header .navbar-expand-lg .container-fluid .nav-run-drop {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    text-align: left; }
+  header .navbar-expand-lg .container-fluid nav ul li li:hover,
+  header .navbar-expand-lg .container-fluid nav ul li ul a:hover {
+    background-color: #FF5500;
+    color: white; }
+  header .navbar-expand-lg .container-fluid ul.dropdown-menu.dropdown-menu-dark.dropdown-run.show {
+    top: auto;
+    left: auto; }
+  header .navbar-expand-lg .container-fluid .dropdown-menu-dark {
+    background-color: #232323; }
+  header .navbar-expand-lg .container-fluid .dropdown-menu {
+    border-radius: 0;
+    border: 0;
+    padding: 0; }
 
 /* FIN ESTILOS HEADER */
 /*TAMAÑOS CONTENEDORES */
