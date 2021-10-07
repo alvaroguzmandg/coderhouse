@@ -41,6 +41,9 @@ header {
                 display: block;
                 padding: 8px;
                 text-align: left;
+                &:hover {
+                    background-color: $colorRunClub;
+                }
             }
             nav ul li li:hover,
             nav ul li ul a:hover {

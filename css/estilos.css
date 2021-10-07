@@ -145,6 +145,10 @@ header .navbar-expand-lg .container-fluid .nav-run-drop {
     text-align: left;
 }
 
+header .navbar-expand-lg .container-fluid .nav-run-drop:hover {
+    background-color: #FF5500;
+}
+
 header .navbar-expand-lg .container-fluid nav ul li li:hover,
 header .navbar-expand-lg .container-fluid nav ul li ul a:hover {
     background-color: #FF5500;
