@@ -80,8 +80,7 @@ header {
     color: #FF5500; }
   header .navbar-expand-lg .container-fluid a.nav-run-drop,
   header .navbar-expand-lg .container-fluid a.nav-run-drop:hover {
-    color: #fff;
-    background-color: #FF5500; }
+    color: #fff; }
   header .navbar-expand-lg .container-fluid .nav-run {
     display: inline-block;
     padding: 10px;
