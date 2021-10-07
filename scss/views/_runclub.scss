@@ -210,28 +210,58 @@
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
+    h2 {
+        @media only screen and (max-width: 992px) {
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+    }
     .entrenamientosRunClub__bloque {
         width: 90%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        gap: 10px;
+        gap: 20px;
+        padding-top: 20px;
+        @media only screen and (max-width: 992px) {
+            max-width: 800px;
+        }
     }
     article {
         grid-column-end: span 3;
         margin: 20px auto;
         text-align: center;
+        @media only screen and (max-width: 992px) {
+            grid-column-end: span 6;
+        }
+        @media only screen and (max-width: 600px) {
+            margin: 0 auto;
+        }
         img {
             width: 100%;
+        }
+        h3 {
+            font-size: 1.8rem;
+            color: $colorRunClub;
+            font-weight: 600;
+            padding-top: 10px;
+            @media only screen and (max-width: 600px) {
+                color: #ffffff;
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            font-size: 2.5rem;
         }
         p {
             font-size: 1.2rem;
             color: #ffffff;
-        }
-        h3 {
-            color: $colorRunClub;
-            font-weight: 600;
-            padding-top: 10px;
+            font-weight: 300;
+            @media only screen and (max-width: 992px) {
+                font-size: 1.5rem;
+            }
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
         }
     }
 }
