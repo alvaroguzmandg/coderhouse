@@ -1,0 +1,36 @@
+.portada__noEncontrado {
+    padding-top: 50px;
+}
+
+section.noEncontrado {
+    margin: 30px auto;
+    .noEncontrado__bloque {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .noEncontrado__contenido {
+        grid-column-end: span 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    img {
+        &.noEncontrado__imagen {
+            width: 80%;
+        }
+        &.noEncontrado__error {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+    }
+    h3 {
+        color: $colorRunClub;
+    }
+    p {
+        width: 90%;
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}

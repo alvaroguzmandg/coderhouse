@@ -655,6 +655,33 @@ section.galeriaEventos {
 .carousel-inner {
   margin-bottom: 50px; }
 
+.portada__noEncontrado {
+  padding-top: 50px; }
+
+section.noEncontrado {
+  margin: 30px auto; }
+  section.noEncontrado .noEncontrado__bloque {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); }
+  section.noEncontrado .noEncontrado__contenido {
+    grid-column-end: span 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  section.noEncontrado img.noEncontrado__imagen {
+    width: 80%; }
+  section.noEncontrado img.noEncontrado__error {
+    width: 80px;
+    margin-bottom: 20px; }
+  section.noEncontrado h3 {
+    color: #FF5500; }
+  section.noEncontrado p {
+    width: 90%;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    text-align: center; }
+
 .btRun-sm {
   color: white;
   background-color: #232323;
