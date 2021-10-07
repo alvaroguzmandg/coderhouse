@@ -75,7 +75,8 @@ a.nav-run-drop:hover {
   letter-spacing: 0.5px;
   text-decoration: none;
   display: block;
-  padding: 8px; }
+  padding: 8px;
+  text-align: left; }
 
 nav ul li li:hover,
 nav ul li ul a:hover {
@@ -109,6 +110,10 @@ ul.dropdown-menu.dropdown-menu-dark.dropdown-run.show {
 
 .bloqueContenido--md {
   max-width: 900px;
+  height: auto; }
+
+.bloqueContenido--lm {
+  max-width: 990px;
   height: auto; }
 
 .bloqueContenido--lg {
@@ -492,6 +497,41 @@ form {
     font-size: 1.6rem; }
   .proximosEventos td {
     font-size: 1.6rem; }
+
+.noticiasRunClub {
+  margin: 50px auto;
+  padding-top: 30px;
+  background-color: #efefef; }
+  .noticiasRunClub h2 {
+    font-size: 3rem;
+    letter-spacing: 3px; }
+  .noticiasRunClub .noticiasRunClub__bloque {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px; }
+  .noticiasRunClub article {
+    text-align: center;
+    padding: 1%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; }
+    .noticiasRunClub article:hover {
+      background-color: #232323;
+      color: white; }
+      .noticiasRunClub article:hover a {
+        color: #FF5500; }
+    .noticiasRunClub article img {
+      object-fit: contain; }
+    .noticiasRunClub article h3 {
+      font-size: 1.8rem;
+      padding: 10px 0px;
+      font-weight: 900; }
+    .noticiasRunClub article p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      letter-spacing: 0.1px;
+      text-align: center; }
 
 .btRun-sm {
   color: white;

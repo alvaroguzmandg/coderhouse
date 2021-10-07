@@ -48,52 +48,6 @@ section#runclubAccesoBiografias article a:hover,
 
 /* ESTILOS PÁGINA RUNCLUB */
 
-section#runclubAccesoNoticias {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 970px;
-    margin-top: 30px;
-}
-
-section#runclubAccesoNoticias h2 {
-    font-size: 3rem;
-}
-
-section#runclubAccesoNoticias article {
-    text-align: center;
-    background-color: rgb(219, 219, 219);
-    padding: 4%;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    grid-column-end: span 4;
-}
-
-section#runclubAccesoNoticias article:hover {
-    background-color: var(--colorFondoPrincipal);
-    color: white;
-}
-
-section#runclubAccesoNoticias article:hover a {
-    color: var(--destacadoClub);
-}
-
-section#runclubAccesoNoticias article h3 {
-    font-size: 1.8rem;
-    padding: 10px 0px;
-    font-weight: 900;
-}
-
-section#runclubAccesoNoticias article img {
-    width: 100%;
-}
-
-section#runclubAccesoNoticias article p {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    letter-spacing: 0.1px;
-    text-align: center;
-}
-
 section#runclubAccesoEditoriales {
     margin: 0 auto;
     width: 100%;
@@ -247,49 +201,6 @@ section#runclubAccesoBiografias article#biografia3 {
 section#runclubAccesoBiografias article#biografia4 {
     background-image: url(../images/biografias/bio-garcia.png);
 }
-
-
-/* FIN ESTILOS PÁGINA RUNCLUB */
-
-
-/* ESTILOS PÁGINA EVENTOS */
-
-section.eventos {
-    padding: 30px 0px;
-    margin-top: 50px;
-    text-align: center;
-}
-
-article table {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-th,
-td {
-    vertical-align: middle;
-    padding: 1.5rem!important;
-    font-size: 1.6rem;
-}
-
-.btn-sm {
-    padding: 10px;
-    font-size: 1rem;
-}
-
-td {
-    font-size: 1.6rem;
-}
-
-
-/* FIN ESTILOS PÁGINAS EVENTOS */
-
-
-/* ESTILOS PÁGINA CONTACTO */
-
-
-/* FIN ESTILOS PÁGINA CONTACTO */
 
 
 /* GALERIA EVENTOS */

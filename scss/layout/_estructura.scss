@@ -8,6 +8,10 @@
     @include estructuraContenido(900px, auto)
 }
 
+.bloqueContenido--lm {
+    @include estructuraContenido(990px, auto)
+}
+
 .bloqueContenido--lg {
     @include estructuraContenido(1200px, auto)
 }

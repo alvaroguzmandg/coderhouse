@@ -1,0 +1,43 @@
+.noticiasRunClub {
+    margin: 50px auto;
+    padding-top: 30px;
+    background-color: #efefef;
+    h2 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+    }
+    .noticiasRunClub__bloque {
+        margin: 0 auto;
+        display: flex;
+        gap: 10px
+    }
+    article {
+        text-align: center;
+        padding: 1%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            background-color: $fondoPrincipal;
+            color: white;
+            a {
+                color: $colorRunClub;
+            }
+        }
+        img {
+            object-fit: contain;
+        }
+        h3 {
+            font-size: 1.8rem;
+            padding: 10px 0px;
+            font-weight: 900;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            letter-spacing: 0.1px;
+            text-align: center;
+        }
+    }
+}
