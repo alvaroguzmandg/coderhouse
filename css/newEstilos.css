@@ -575,6 +575,10 @@ section.contenedorEventos {
     text-align: center;
     transition: 1s;
     border-radius: 0px; }
+    @media only screen and (max-width: 300px) {
+      .grillaFotos .grillaFotos__foto {
+        height: auto;
+        width: 90%; } }
     .grillaFotos .grillaFotos__foto img {
       width: 100%;
       height: 100%;
