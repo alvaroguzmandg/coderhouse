@@ -1,260 +1,193 @@
 a.btRun-sm {
-    color: white;
-    background-color: var(--colorFondoPrincipal);
-    padding: 5px;
-    width: auto;
-    text-transform: lowercase;
-    font-size: 1rem;
-    margin: 10px auto;
-}
+  color: white;
+  background-color: var(--colorFondoPrincipal);
+  padding: 5px;
+  width: auto;
+  text-transform: lowercase;
+  font-size: 1rem;
+  margin: 10px auto; }
 
 a.btRun-med {
-    color: var(--destacadoClub);
-    background-color: var(--colorFondoPrincipal);
-    padding: 10px 0px;
-    width: 100px;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    margin: 10px auto;
-}
+  color: var(--destacadoClub);
+  background-color: var(--colorFondoPrincipal);
+  padding: 10px 0px;
+  width: 100px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 10px auto; }
 
 a.btRun-med:hover {
-    background-color: var(--destacadoClub);
-    color: #ffffff;
-}
+  background-color: var(--destacadoClub);
+  color: #ffffff; }
 
 a.btRun-large {
-    color: black;
-    background-color: white;
-    padding: 10px 20px;
-    width: 200px;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    margin: 10px auto;
-    text-align: center;
-}
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  width: 200px;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 10px auto;
+  text-align: center; }
 
 a.btRun-large:hover {
-    background-color: var(--destacadoClub);
-    color: white;
-}
+  background-color: var(--destacadoClub);
+  color: white; }
 
 :root {
-    --destacadoClub: #FF5500;
-    --colorFondoPrincipal: #232323;
-    --colorTextoPrincipal: #232323;
-}
+  --destacadoClub: #FF5500;
+  --colorFondoPrincipal: #232323;
+  --colorTextoPrincipal: #232323; }
 
 * {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0; }
 
 html {
-    font-size: 10px;
-}
+  font-size: 10px; }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-}
+  font-family: 'Open Sans', sans-serif; }
 
 h1 {
-    color: var(--colorTextoPrincipal);
-    font-weight: 700;
-    font-size: 6rem;
-}
+  color: var(--colorTextoPrincipal);
+  font-weight: 700;
+  font-size: 6rem; }
 
 h1 .destacadoClub {
-    font-size: 6rem;
-}
+  font-size: 6rem; }
 
 h2 {
-    color: var(--destacadoClub);
-    font-weight: 700;
-    text-align: center;
-}
+  color: var(--destacadoClub);
+  font-weight: 700;
+  text-align: center; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 hr {
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border: 1px solid #666666;
-}
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #666666; }
 
 footer {
-    margin-top: 50px;
-    padding: 40px 0px;
-    background-color: #232323;
-    color: white;
-}
-
-footer .footer__contenido {
+  margin-top: 50px;
+  padding: 40px 0px;
+  background-color: #232323;
+  color: white; }
+  footer .footer__contenido {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 0 auto;
-}
-
-footer h3 {
+    margin: 0 auto; }
+  footer h3 {
     font-weight: 700;
-    font-size: 20px;
-}
-
-footer .footer__texto {
+    font-size: 20px; }
+  footer .footer__texto {
     font-size: 12px;
     font-weight: 500;
-    margin-bottom: 0;
-}
-
-footer .footer__accesos {
+    margin-bottom: 0; }
+  footer .footer__accesos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
-    margin-top: 5px;
-}
-
-footer .footer__imagen {
-    width: 70%;
-}
+    margin-top: 5px; }
+  footer .footer__imagen {
+    width: 70%; }
 
 section.contenedorEventos {
-    margin-top: 30px;
-}
-
-section.contenedorEventos .contenedorEventos__eventosAnteriores {
+  margin-top: 30px; }
+  section.contenedorEventos .contenedorEventos__eventosAnteriores {
     width: 90%;
     margin: 20px auto;
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
-    row-gap: 30px;
-}
-
-section.contenedorEventos h2 {
+    row-gap: 30px; }
+  section.contenedorEventos h2 {
     letter-spacing: 10px;
-    font-size: 3rem;
-}
-
-section.contenedorEventos .contenedorEventos__bloqueContenido,
-section.contenedorEventos .contenedorEventos__bloqueContenido2 {
+    font-size: 3rem; }
+  section.contenedorEventos .contenedorEventos__bloqueContenido, section.contenedorEventos .contenedorEventos__bloqueContenido2 {
     background-color: var(--colorFondoPrincipal);
     display: block;
     transition: 2s;
     padding-top: 3%;
     margin: 0 auto;
-    text-align: center;
-}
-
-section.contenedorEventos .contenedorEventos__bloqueContenido2 {
-    background-color: var(--destacadoClub);
-}
-
-section.contenedorEventos .contenedorEventos__imagenEvento {
+    text-align: center; }
+  section.contenedorEventos .contenedorEventos__bloqueContenido2 {
+    background-color: var(--destacadoClub); }
+  section.contenedorEventos .contenedorEventos__imagenEvento {
     width: 95%;
-    margin: 0 auto;
-}
-
-section.contenedorEventos .contenedorEventos__tituloEventoAnterior,
-section.contenedorEventos .contenedorEventos__tituloEventoAnterior2 {
+    margin: 0 auto; }
+  section.contenedorEventos .contenedorEventos__tituloEventoAnterior, section.contenedorEventos .contenedorEventos__tituloEventoAnterior2 {
     font-size: 1.2rem;
     font-weight: 900;
     color: #ffffff;
     padding-top: 5px;
     padding-bottom: 5px;
-    text-transform: uppercase;
-}
-
-section.contenedorEventos .contenedorEventos__tituloEventoAnterior2 {
-    color: var(--colorFondoPrincipal);
-}
-
-section.contenedorEventos .contenedorEventos__bloqueContenido:hover,
-section.contenedorEventos .contenedorEventos__bloqueContenido2:hover {
-    transform: scale(1.05);
-}
-
-@media only screen and (max-width: 900px) {
+    text-transform: uppercase; }
+  section.contenedorEventos .contenedorEventos__tituloEventoAnterior2 {
+    color: var(--colorFondoPrincipal); }
+  section.contenedorEventos .contenedorEventos__bloqueContenido:hover, section.contenedorEventos .contenedorEventos__bloqueContenido2:hover {
+    transform: scale(1.05); }
+  @media only screen and (max-width: 900px) {
     section.contenedorEventos .contenedorEventos__titulo {
-        width: 90%;
-        margin: 0 auto;
-        font-size: 2rem;
-        line-height: 3rem;
-        letter-spacing: 5px;
-    }
+      width: 90%;
+      margin: 0 auto;
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: 5px; }
     section.contenedorEventos .contenedorEventos__eventosAnteriores {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-}
+      flex-direction: column;
+      margin-top: 10px; } }
 
 section.contenedorProximosEventos {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-section.contenedorProximosEventos .contenedorProximosEventos__contenido {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; }
+  section.contenedorProximosEventos .contenedorProximosEventos__contenido {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
-}
-
-section.contenedorProximosEventos h2 {
+    justify-content: space-between; }
+  section.contenedorProximosEventos h2 {
     font-size: 3rem;
     letter-spacing: 3px;
     color: #ffffff;
     line-height: 3rem;
     padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-section.contenedorProximosEventos .contenedorProximosEventos__acceso {
+    padding-bottom: 20px; }
+  section.contenedorProximosEventos .contenedorProximosEventos__acceso {
     width: 24%;
     display: inline-block;
     text-align: center;
-    background-color: var(--destacadoClub);
-}
-
-section.contenedorProximosEventos .contenedorProximosEventos__imagen {
+    background-color: var(--destacadoClub); }
+  section.contenedorProximosEventos .contenedorProximosEventos__imagen {
     width: 100%;
-    height: 100%;
-}
-
-section.contenedorProximosEventos .contenedorProximosEventos__imagen:hover {
+    height: 100%; }
+  section.contenedorProximosEventos .contenedorProximosEventos__imagen:hover {
     transform: scale(0.95);
-    transition: 1s;
-}
-
-section.contenedorProximosEventos .contenedorProximosEventos__boton .verMas {
+    transition: 1s; }
+  section.contenedorProximosEventos .contenedorProximosEventos__boton .verMas {
     margin: 0 auto;
-    margin-top: 15px;
-}
-
-@media only screen and (max-width: 600px) {
+    margin-top: 15px; }
+  @media only screen and (max-width: 600px) {
     section.contenedorProximosEventos h2 {
-        width: 90%;
-        margin: 0 auto;
-        font-size: 2rem;
-        line-height: 3rem;
-        letter-spacing: 5px;
-    }
+      width: 90%;
+      margin: 0 auto;
+      font-size: 2rem;
+      line-height: 3rem;
+      letter-spacing: 5px; }
     section.contenedorProximosEventos .contenedorProximosEventos__contenido {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px; }
     section.contenedorProximosEventos .contenedorProximosEventos__acceso {
-        width: 100%;
-        display: block;
-        grid-column-end: span 2;
-    }
-}
+      width: 100%;
+      display: block;
+      grid-column-end: span 2; } }
