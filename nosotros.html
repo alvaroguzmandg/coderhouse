@@ -72,7 +72,15 @@
     <!-- INICIO CONTENIDO-->
     <main>
         <section class="portada">
-            <img src="./images/portadas/portada-nosotros.png" alt="Imagen de portada sección nosotros RunClub">
+
+            <!-- PORTADA -->
+            <picture>
+                <source srcset="./images/portadas/portada-nosotros-xl.png" media="(min-width: 1280px)" />
+                <source srcset="./images/portadas/portada-nosotros-lg.png" media="(min-width: 990px)" />
+                <source srcset="./images/portadas/portada-nosotros-md.png" media="(min-width: 600px)" />
+                <img src="./images/portadas/portada-nosotros-sm.png" alt="Imagen de portada sección nosotros RunClub" />
+            </picture>
+
 
             <div class="encabezadoDestacado bloqueContenido--lg">
                 <h1>NOSOTROS SOMOS <span class="destacadoClub">RUNCLUB</span></h1>
@@ -84,26 +92,46 @@
         <section class="staff fondoGradient">
             <h2>STAFF</h2>
             <div class="staff__contenido bloqueContenido--lm">
-                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                <h3>ÁLVARO <span class="destacadoClub">GUZMÁN</span></h3>
-                <img src="./images/nosotros-1.png" alt="Miembro Staff Álvaro Guzmán Responsable de creatividad RunClub">
-                <p>Sub3. Diseñador y Maratonista. Ponele un objetivo y no para hasta cumplirlo. Responsable creativo del equipo.</p>
-                </span>
-                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <!-- STAFF 1 -->
+                <div class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <h3>ÁLVARO <span class="destacadoClub">GUZMÁN</span></h3>
+                    <img src="./images/nosotros-1.png" alt="Miembro Staff Álvaro Guzmán Responsable de creatividad RunClub">
+                    <p>Sub3. Diseñador y Maratonista. Ponele un objetivo y no para hasta cumplirlo. Responsable creativo del equipo.</p>
+                    <span class="staff__link">
+                        <a href="https://instagram.com/alvarunner" target="_blank"><img src="./images/icons/instagram-icon.svg" alt=""></a>
+                        <a href="https://www.strava.com/athletes/13203084" target="_blank"><img src="https://www.vectorlogo.zone/logos/strava/strava-icon.svg" alt=""></a>
+                    </span>
+                </div>
+                <!-- STAFF 2 -->
+                <div class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <h3>SANTIAGO <span class="destacadoClub">OLIVIERI</span></h3>
-                <img src="./images/nosotros-2.png" alt="Miembro Staff Santiago Olivieri Organizador RunClub">
-                <p>Mr. Ultra. Especialista en correr montañas y rutas. Organizador y coordinador de cada uno de nuestros eventos.</p>
-                </span>
-                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                <h3>GONZALO <span class="destacadoClub">REY</span></h3>
-                <img src="./images/nosotros-3.png" alt="Miembro Staff Gonzalo Rey coordinador de equipos RunClub">
-                <p>El colo. El ordenado, ultra maratonista versátil. Coordinador de equipos y de todas nuestras actividades.</p>
-                </span>
-                <span class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                <h3>MARIANO <span class="destacadoClub">TABANERA</span></h3>
-                <img src="./images/nosotros-4.png" alt="Miembro Staff Mariano Tabanera guía de aventura">
-                <p>El señor montaña. Nuestro guía en las carreras de aventura y especialista en todas nuestras novedades.</p>
-                </span>
+                    <img src="./images/nosotros-2.png" alt="Miembro Staff Santiago Olivieri Organizador RunClub">
+                    <p>Mr. Ultra. Especialista en correr montañas y rutas. Organizador y coordinador de cada uno de nuestros eventos.</p>
+                    <span class="staff__link">
+                        <a href="https://instagram.com/sanolivi" target="_blank"><img src="./images/icons/instagram-icon.svg" alt=""></a>
+                        <a href="https://www.strava.com/athletes/27367028" target="_blank"><img src="https://www.vectorlogo.zone/logos/strava/strava-icon.svg" alt=""></a>
+                    </span>
+                </div>
+                <!-- STAFF 3 -->
+                <div class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <h3>GONZALO <span class="destacadoClub">REY</span></h3>
+                    <img src="./images/nosotros-3.png" alt="Miembro Staff Gonzalo Rey coordinador de equipos RunClub">
+                    <p>El colo. El ordenado, ultra maratonista versátil. Coordinador de equipos y de todas nuestras actividades.</p>
+                    <span class="staff__link">
+                        <a href="https://instagram.com/gonzalorey" target="_blank"><img src="./images/icons/instagram-icon.svg" alt=""></a>
+                        <a href="https://www.strava.com/athletes/7495039" target="_blank"><img src="https://www.vectorlogo.zone/logos/strava/strava-icon.svg" alt=""></a>
+                    </span>
+                </div>
+                <!-- STAFF 4 -->
+                <div class="staff_miembroStaff" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                    <h3>MARIANO <span class="destacadoClub">TABANERA</span></h3>
+                    <img src="./images/nosotros-4.png" alt="Miembro Staff Mariano Tabanera guía de aventura">
+                    <p>El señor montaña. Nuestro guía en las carreras de aventura y especialista en todas nuestras novedades.</p>
+                    <span class="staff__link">
+                        <a href="https://instagram.com/marianotaba" target="_blank"><img src="./images/icons/instagram-icon.svg" alt=""></a>
+                        <a href="https://www.strava.com/athletes/13045999" target="_blank"><img src="https://www.vectorlogo.zone/logos/strava/strava-icon.svg" alt=""></a>
+                    </span>
+                </div>
             </div>
         </section>
         <!-- FIN CONTENIDO STAFF -->

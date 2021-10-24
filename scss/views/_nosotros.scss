@@ -64,6 +64,16 @@
                     line-height: 3rem;
                 }
             }
+            .staff__link {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                a {
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
         }
     }
     

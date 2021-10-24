@@ -1,6 +1,15 @@
 .portada__home {
-    background-image: url(../images/portadas/portada.png);
+    background-image: url(../images/portadas/portada-home-xl.png);
     height: 600px;
+    @media only screen and (max-width: 1280px) {
+        background-image: url(../images/portadas/portada-home-lg.png);
+    }
+    @media only screen and (max-width: 900px) {
+        background-image: url(../images/portadas/portada-home-md.png);
+    }
+    @media only screen and (max-width: 600px) {
+        background-image: url(../images/portadas/portada-home-sm.png);
+    }
     h1 {
         animation-duration: 4s;
     }
