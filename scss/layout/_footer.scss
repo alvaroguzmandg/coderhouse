@@ -8,34 +8,25 @@ footer {
         justify-content: space-between;
         width: 90%;
         margin: 0 auto;
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+            text-align: center;
+        }
         h3 {
             font-weight: 700;
             font-size: 2rem;
+            @media only screen and (max-width: 800px) {
+                font-size: 3rem;
+            }
         }
         .footer__texto {
             font-size: 12px;
             font-weight: 500;
             margin-bottom: 0;
+            @media only screen and (max-width: 800px) {}
         }
-        .footer__accesos {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 5px;
-            margin-top: 5px;
-        }
-        .footer__imagen {
-            width: 70%;
-        }
-    }
-    @media only screen and (max-width:800px) {
-        padding: 20px;
-        .footer__contenido {
-            flex-direction: column;
-            text-align: center;
-            h3 {
-                font-size: 3rem;
-            }
-            .footer__redes {
+        .footer__redes {
+            @media only screen and (max-width: 800px) {
                 margin-top: 10px;
                 p {
                     color: $colorRunClub;
@@ -51,9 +42,19 @@ footer {
                 }
             }
             .footer__accesos {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 5px;
+                margin-top: 5px;
+                @media only screen and (max-width: 800px) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 5px;
+                }
+            }
+            .footer__imagen {
+                width: 20px;
             }
         }
     }

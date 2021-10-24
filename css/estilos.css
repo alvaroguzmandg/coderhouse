@@ -23,46 +23,47 @@ footer {
     justify-content: space-between;
     width: 90%;
     margin: 0 auto; }
+    @media only screen and (max-width: 800px) {
+      footer .footer__contenido {
+        flex-direction: column;
+        text-align: center; } }
     footer .footer__contenido h3 {
       font-weight: 700;
       font-size: 2rem; }
+      @media only screen and (max-width: 800px) {
+        footer .footer__contenido h3 {
+          font-size: 3rem; } }
     footer .footer__contenido .footer__texto {
       font-size: 12px;
       font-weight: 500;
       margin-bottom: 0; }
-    footer .footer__contenido .footer__accesos {
+    @media only screen and (max-width: 800px) {
+      footer .footer__contenido .footer__redes {
+        margin-top: 10px; }
+        footer .footer__contenido .footer__redes p {
+          color: #FF5500;
+          font-size: 1.4rem;
+          letter-spacing: 2px;
+          font-weight: 900;
+          text-transform: uppercase;
+          margin-bottom: 10px; } }
+    @media only screen and (max-width: 800px) and (max-width: 400px) {
+      footer .footer__contenido .footer__redes p {
+        font-size: 1rem;
+        line-height: 1rem; } }
+    footer .footer__contenido .footer__redes .footer__accesos {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 5px;
       margin-top: 5px; }
-    footer .footer__contenido .footer__imagen {
-      width: 70%; }
-  @media only screen and (max-width: 800px) {
-    footer {
-      padding: 20px; }
-      footer .footer__contenido {
-        flex-direction: column;
-        text-align: center; }
-        footer .footer__contenido h3 {
-          font-size: 3rem; }
-        footer .footer__contenido .footer__redes {
-          margin-top: 10px; }
-          footer .footer__contenido .footer__redes p {
-            color: #FF5500;
-            font-size: 1.4rem;
-            letter-spacing: 2px;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin-bottom: 10px; } }
-        @media only screen and (max-width: 800px) and (max-width: 400px) {
-          footer .footer__contenido .footer__redes p {
-            font-size: 1rem;
-            line-height: 1rem; } }
-  @media only screen and (max-width: 800px) {
-        footer .footer__contenido .footer__accesos {
+      @media only screen and (max-width: 800px) {
+        footer .footer__contenido .footer__redes .footer__accesos {
           display: flex;
           flex-direction: row;
-          justify-content: center; } }
+          justify-content: center;
+          gap: 5px; } }
+    footer .footer__contenido .footer__redes .footer__imagen {
+      width: 20px; }
 
 /* ESTILOS HEADER DESKTOP*/
 header {
