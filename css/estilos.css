@@ -878,6 +878,9 @@ section.galeriaEventos {
   margin: 40px auto;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 900px) {
+    section.galeriaEventos {
+      width: 90%; } }
 
 .carousel-inner {
   margin-bottom: 50px; }
