@@ -99,10 +99,13 @@
             text-align: center;
             transition: 1s;
             border-radius: 0px;
+            @media only screen and (max-width: 600px) {
+                min-height: 150px;
+                height: 100%;
+            }
             @media only screen and (max-width: 300px) {
                 height: auto;
                 width: 90%;
-                height: auto;
             }
             img {
                 width: 100%;
