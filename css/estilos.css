@@ -1255,6 +1255,13 @@ section.contenedorEventos .contenedorEventos__tituloEventoAnterior {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .entrenamientosRunClub h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+
 .entrenamientosRunClub .entrenamientosRunClub__bloque {
     width: 90%;
     margin: 0 auto;
@@ -1270,29 +1277,44 @@ section.contenedorEventos .contenedorEventos__tituloEventoAnterior {
     }
 }
 
-.entrenamientosRunClub article {
+@media only screen and (max-width: 350px) {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.entrenamientosRunClub .entrenamientosRunClub__bloque article {
     grid-column-end: span 3;
     margin: 20px auto;
     text-align: center;
 }
 
 @media only screen and (max-width: 992px) {
-    .entrenamientosRunClub article {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque article {
         grid-column-end: span 6;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .entrenamientosRunClub article {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque article {
+        grid-column-end: span 6;
         margin: 0 auto;
     }
 }
 
-.entrenamientosRunClub article img {
+@media only screen and (max-width: 350px) {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque article {
+        grid-column-end: span 12;
+        width: 100%;
+    }
+}
+
+.entrenamientosRunClub .entrenamientosRunClub__bloque article picture img {
     width: 100%;
 }
 
-.entrenamientosRunClub article h3 {
+.entrenamientosRunClub .entrenamientosRunClub__bloque article h3 {
     font-size: 1.8rem;
     color: #FF5500;
     font-weight: 600;
@@ -1300,31 +1322,32 @@ section.contenedorEventos .contenedorEventos__tituloEventoAnterior {
 }
 
 @media only screen and (max-width: 600px) {
-    .entrenamientosRunClub article h3 {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque article h3 {
         color: #ffffff;
+        font-size: 1.4rem;
     }
 }
 
 @media only screen and (max-width: 992px) {
-    .entrenamientosRunClub article {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque article {
         font-size: 2.5rem;
     }
 }
 
-.entrenamientosRunClub article p {
+.entrenamientosRunClub .entrenamientosRunClub__bloque article p {
     font-size: 1.2rem;
     color: #ffffff;
     font-weight: 300;
 }
 
 @media only screen and (max-width: 992px) {
-    .entrenamientosRunClub article p {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque article p {
         font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .entrenamientosRunClub article p {
+    .entrenamientosRunClub .entrenamientosRunClub__bloque article p {
         display: none;
     }
 }
@@ -1508,6 +1531,6 @@ section.noEncontrado p {
 
 @media only screen and (max-width: 300px) {
     .btRunDestacado-large {
-        width: 100%;
+        width: 90%;
     }
 }
