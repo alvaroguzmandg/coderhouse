@@ -71,7 +71,12 @@
     <!-- INICIO CONTENIDO-->
     <main>
         <section class="portada container-fluid">
-            <img src="./images/portadas/portada-eventos.png" alt="Imagen de portada sección eventos">
+            <picture>
+                <source srcset="./images/portadas/portada-eventos-xl.png" media="(min-width: 1280px)" />
+                <source srcset="./images/portadas/portada-eventos-lg.png" media="(min-width: 990px)" />
+                <source srcset="./images/portadas/portada-eventos-md.png" media="(min-width: 600px)" />
+                <img src="./images/portadas/portada-eventos-sm.png" alt="Imagen de portada sección eventos RunClub" />
+            </picture>
             <h1>21K <span class="destacadoClub">DE BUENOS AIRES</span></h1>
             <p class="textosDestacados bloqueContenido--sm">¡El 10 de octubre se corrieron los 21k de Buenos Aires y tuvimos una amplia participación de nuestros atletas! Acá te dejamos una galería con las fotos más destacadas para que puedas disfrutarlas y revivir esta gran experiencia que vivimos
                 el domingo.</p>
