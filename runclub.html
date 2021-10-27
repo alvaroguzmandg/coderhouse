@@ -72,8 +72,13 @@
     <!-- INICIO CONTENIDO-->
     <main>
         <section class="portada">
-            <img src="./images/portadas/portada-runclub.png" alt="Imagen de portada sección runclub">
-            <h1>ZONA <span class="destacadoClub">CORREDOR</span></h1>
+            <picture>
+                <source srcset="./images/portadas/portada-runclub-xl.png" media="(min-width: 1280px)" />
+                <source srcset="./images/portadas/portada-runclub-lg.png" media="(min-width: 990px)" />
+                <source srcset="./images/portadas/portada-runclub-md.png" media="(min-width: 600px)" />
+                <img src="./images/portadas/portada-runclub-sm.png" alt="Imagen de portada sección RunClub" />
+            </picture>
+            <h1>ZONA <span class="destacadoClub">RUNCLUB</span></h1>
             <p class="textosDestacados bloqueContenido--sm">Acá vas a enterarte de todas las novedades del mundo del running. Noticias, biografías, editoriales y entrenamientos para que no te pierdas de nada.</p>
         </section>
         <!-- FIN CONTENIDO INICIAL -->
