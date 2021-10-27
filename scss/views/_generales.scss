@@ -17,6 +17,9 @@ h1 {
         width: 90%;
         margin: 0 auto;
     }
+    @media only screen and (max-width: 600px) {
+        line-height: 3.5rem;
+    }
 }
 
 h2 {
@@ -40,7 +43,7 @@ hr {
 
 .encabezadoDestacado {
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 30px;
 }
 
