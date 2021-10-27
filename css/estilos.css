@@ -52,8 +52,9 @@ footer {
         font-size: 1rem;
         line-height: 1rem; } }
     footer .footer__contenido .footer__redes .footer__accesos {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       gap: 5px;
       margin-top: 5px; }
       @media only screen and (max-width: 800px) {
@@ -61,9 +62,12 @@ footer {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          gap: 5px; } }
-    footer .footer__contenido .footer__redes .footer__imagen {
-      width: 20px; }
+          gap: 20px; } }
+      footer .footer__contenido .footer__redes .footer__accesos a {
+        display: flex;
+        align-items: center; }
+      footer .footer__contenido .footer__redes .footer__accesos .footer__imagen {
+        width: 25px; }
 
 /* ESTILOS HEADER DESKTOP*/
 header {
@@ -433,7 +437,7 @@ section.contenedorEventos {
     padding-top: 5px;
     padding-bottom: 5px;
     text-transform: uppercase; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1200px) {
     section.contenedorEventos {
       width: 90%; }
       section.contenedorEventos .contenedorEventos__eventosAnteriores {

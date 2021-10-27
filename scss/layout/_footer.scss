@@ -42,19 +42,24 @@ footer {
                 }
             }
             .footer__accesos {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 gap: 5px;
                 margin-top: 5px;
                 @media only screen and (max-width: 800px) {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-                    gap: 5px;
+                    gap: 20px;
                 }
-            }
-            .footer__imagen {
-                width: 20px;
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+                .footer__imagen {
+                    width: 25px;
+                }
             }
         }
     }
