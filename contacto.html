@@ -73,7 +73,13 @@
     <!-- INICIO CONTENIDO -->
     <main>
         <section class="portada">
-            <img src="./images/portadas/portada-contacto.png" alt="Imagen de portada contacto">
+            <!-- PORTADA -->
+            <picture>
+                <source srcset="./images/portadas/portada-contacto-xl.png" media="(min-width: 1280px)" />
+                <source srcset="./images/portadas/portada-contacto-lg.png" media="(min-width: 990px)" />
+                <source srcset="./images/portadas/portada-contacto-md.png" media="(min-width: 600px)" />
+                <img src="./images/portadas/portada-contacto-sm.png" alt="Imagen de portada sección nosotros RunClub" />
+            </picture>
             <div class="encabezadoDestacado bloqueContenido--lg">
                 <h1>ENTRENÁ CON <span class="destacadoClub">NOSOTROS</span></h1>
                 <p class="textosDestacados bloqueContenido--sm">Nunca es fácil probar algo nuevo. Pero es excelente. Porque no importa cuántas veces te caigas, siempre ganas algo. Probar cosas nuevas siempre es una victoria.
