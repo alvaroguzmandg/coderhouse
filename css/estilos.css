@@ -162,13 +162,14 @@ header {
     width: 100%;
     margin-bottom: 30px; }
 
-@media only screen and (max-width: 900px) {
-  html {
-    font-size: 11px; } }
-
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 10px; } }
+html {
+  scroll-behavior: smooth; }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 11px; } }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 10px; } }
 
 h1 {
   color: #232323;
